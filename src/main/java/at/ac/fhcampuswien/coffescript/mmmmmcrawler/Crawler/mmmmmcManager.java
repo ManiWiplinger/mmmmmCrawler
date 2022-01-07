@@ -23,7 +23,7 @@ public class mmmmmcManager {
     private TreeSet<mmmmmC> nextDepthLinks(HashSet<String> links){
         TreeSet<mmmmmC> temp = new TreeSet<mmmmmC>(new mmmmmcCompareTo());
         for(String URL : links){
-            //System.out.println(URL);
+            System.out.println(URL);
             mmmmmC test= new mmmmmC(URL);
             //System.out.println(test.toString());
             //TODO mmmmmcCompareTo muss funktionieren https://www.geeksforgeeks.org/how-to-sort-a-treeset-with-user-defined-objects-in-java/
