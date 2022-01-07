@@ -18,6 +18,7 @@ public class mmmmmC{
         parseHTML();
     }
 
+
     private void parseHTML(){
         if (!links.contains(URL)){
             try {
