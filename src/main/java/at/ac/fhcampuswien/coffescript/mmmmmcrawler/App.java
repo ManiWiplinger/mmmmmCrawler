@@ -14,8 +14,8 @@ import java.util.Scanner;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("App-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 800);
         stage.setTitle("mmmmmCrawler");
         stage.setScene(scene);
         stage.show();
@@ -24,7 +24,8 @@ public class App extends Application {
 
 
     public static void main(String[] args) {
-        launch();
+        launch(); //Aufruf von AppController.java
+        /* Für Test zwecke auskommentiert
         Scanner scan = new Scanner(System.in);
         System.out.print("Hallo, wonach soll ich für dich suchen?");
         String eingabe = scan.nextLine();
@@ -32,14 +33,15 @@ public class App extends Application {
         int depth = scan.nextInt();
         mmmmmC data = new mmmmmC("http://www." + eingabe + ".at/");
         //System.out.println(data.toString());
-        mmmmmcManager dataDepth = new mmmmmcManager(data.getPageLinks(), depth);
+        mmmmmcManager Manager = new mmmmmcManager(data.getPageLinks(), depth);
 
         //JSON part starts here
         mmmmmCJsonWriter.fileWriter(mmmmmCJsonWriter.hashSetConverter(data.getPageLinks()));
         //JSON part ends here
-        for (mmmmmC out : dataDepth.getContent()) {
+        for (mmmmmC out : Manager.getContent()) {
             System.out.println(out.getURL());
             System.out.println(out.toString());
         }
+        */
     }
 }
