@@ -21,6 +21,8 @@ public class App extends Application {
         stage.show();
     }
 
+
+
     public static void main(String[] args) {
         launch();
         Scanner scan = new Scanner(System.in);
