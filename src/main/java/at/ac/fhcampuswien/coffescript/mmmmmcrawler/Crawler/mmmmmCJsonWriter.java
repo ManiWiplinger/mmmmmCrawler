@@ -8,12 +8,6 @@ import java.util.HashSet;
 
 public class mmmmmCJsonWriter {
 
-    private HashSet toConvertToJSON;
-
-    public mmmmmCJsonWriter(HashSet toConvertToJSON) {
-        this.toConvertToJSON = toConvertToJSON;
-    }
-
     public static JSONObject hashSetConverter(HashSet toConvertToJSON) {
         JSONObject writeToFile = new JSONObject();
         writeToFile.put("Links:", toConvertToJSON);
