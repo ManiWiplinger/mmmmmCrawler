@@ -24,4 +24,13 @@ public class SimpleSearchController {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    public void goToHelp(ActionEvent event) throws IOException {
+        //navigation zum zurück zur Landing Page
+        Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
+        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

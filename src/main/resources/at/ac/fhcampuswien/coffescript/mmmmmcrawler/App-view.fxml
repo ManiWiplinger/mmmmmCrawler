@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.AppController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.AppController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Label fx:id="baseCrawl"/>
-    <Button text="Crawl" onAction="#onHelloButtonClick"/>
-    <Button text="Crawl tiefe 1" onAction="#tiefe1"/>
-    <Button text="Crawl tiefe 2" onAction="#tiefe2"/>
-    <TextArea fx:id="ta" minHeight="300" editable="false"/>
+    <Label fx:id="baseCrawl" />
+    <Button onAction="#onHelloButtonClick" text="Crawl" />
+    <Button onAction="#tiefe1" text="Crawl tiefe 1" />
+    <Button onAction="#tiefe2" text="Crawl tiefe 2" />
+    <TextArea fx:id="ta" editable="false" minHeight="300" />
 </VBox>
