@@ -26,20 +26,13 @@
             </Menu>
              <Menu mnemonicParsing="false" text="Go to">
                  <items>
-                     <MenuItem mnemonicParsing="false" onAction="#goToSimpleSearch" text="Simple search" />
+                     <MenuItem id="simple-search-button" mnemonicParsing="false" onAction="#goToSimpleSearch" text="Simple Search" />
                      <MenuItem mnemonicParsing="false" text="Advanced search" />
-                     <MenuItem mnemonicParsing="false" text="Search for fun" />
+                     <MenuItem fx:id="goToSimpleSearchButton" mnemonicParsing="false" onAction="#goToSimpleSearch" text="Search for fun" />
                  </items>
              </Menu>
          </menus>
       </MenuBar>
-      <Button id="next-page" layoutX="394.0" layoutY="359.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="156.0" text="Next" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <effect>
-            <Glow />
-         </effect></Button>
         <Button id="get-help" layoutX="14.0" layoutY="336.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="69.0" text="Help" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" />
       <Accordion layoutX="210.0" layoutY="151.0" />
       <Button id="try-me-button" fx:id="tryMeButton" layoutX="210.0" layoutY="118.0" mnemonicParsing="false" onAction="#goToTryMeOut" prefHeight="33.0" prefWidth="156.0" text="Try me out" AnchorPane.topAnchor="118.0">
