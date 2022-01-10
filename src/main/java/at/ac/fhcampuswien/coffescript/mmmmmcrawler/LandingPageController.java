@@ -50,6 +50,5 @@ public class LandingPageController {
     }
 
     public static void main(String[] args) {
-
     }
 }
