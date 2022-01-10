@@ -26,7 +26,7 @@
             </Menu>
              <Menu mnemonicParsing="false" text="Go to">
                  <items>
-                     <MenuItem id="simple-search-button" mnemonicParsing="false" onAction="#goToSimpleSearch" text="Simple Search" />
+                     <MenuItem mnemonicParsing="false" onAction="#goToSimpleSearchHeader" text="Simple Search" />
                      <MenuItem mnemonicParsing="false" text="Advanced search" />
                      <MenuItem fx:id="goToSimpleSearchButton" mnemonicParsing="false" onAction="#goToSimpleSearch" text="Search for fun" />
                  </items>
@@ -43,7 +43,7 @@
             <Glow />
          </effect>
       </Button>
-      <Button id="simple-search-button" fx:id="goToSimpleSearchButton" layoutX="210.0" layoutY="167.0" mnemonicParsing="false" onAction="#goToSimpleSearch" prefHeight="33.0" prefWidth="156.0" text="Simple Search" AnchorPane.topAnchor="167.0">
+      <Button layoutX="210.0" layoutY="167.0" mnemonicParsing="false" onAction="#goToSimpleSearch" prefHeight="33.0" prefWidth="156.0" text="Simple Search" AnchorPane.topAnchor="167.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
