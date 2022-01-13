@@ -10,7 +10,7 @@ public class crawlerJsonWriter {
 
     public static JSONObject hashSetConverter(HashSet toConvertToJSON) {
         JSONObject writeToFile = new JSONObject();
-        writeToFile.put("Links:", toConvertToJSON);
+        writeToFile.put("Links: ", toConvertToJSON);
         return writeToFile;
     }
     public static void fileWriter(JSONObject writeToFile) {
