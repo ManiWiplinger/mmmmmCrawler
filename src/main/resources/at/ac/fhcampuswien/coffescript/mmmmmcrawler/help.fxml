@@ -34,7 +34,7 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Button id="back-button" layoutX="394.0" layoutY="359.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
+      <Button id="main-button" layoutX="394.0" layoutY="359.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Main" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
