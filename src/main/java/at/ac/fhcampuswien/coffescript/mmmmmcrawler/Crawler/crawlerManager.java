@@ -8,12 +8,12 @@ public class crawlerManager {
     private TreeSet<crawler> content = new TreeSet<crawler>();
     private int depth=0;
 
-    public crawlerManager(HashSet<String> baseLinks, int depth) {
+    public crawlerManager(HashSet<String> baseLinks, int depth) { //Konstruktor für Tiefe null
         this.depth = depth;
         this.content= nextDepthLinks(baseLinks);
     }
 
-    public crawlerManager(crawlerManager baseManager, int depth) {
+    public crawlerManager(crawlerManager baseManager, int depth) { // Konstruktor für Tiefen > 0
         this.depth = depth;
         HashSet<String> baseLinks = new HashSet<String>();
         for (crawler out : baseManager.getContent()) {
@@ -33,10 +33,8 @@ public class crawlerManager {
     private TreeSet<crawler> nextDepthLinks(HashSet<String> links){
         TreeSet<crawler> temp = new TreeSet<crawler>(new crawlerCompareTo());
         for(String URL : links){
-            crawler test= new crawler(URL);
-            //System.out.println(test.toString());
-            //crawlerCompareTo muss funktionieren https://www.geeksforgeeks.org/how-to-sort-a-treeset-with-user-defined-objects-in-java/
-            temp.add(test);
+            crawler test= new crawler(URL);//neues Crawl Objekt wird erstellt
+            temp.add(test); // Crawl Objekt wird dem Treeset hinzugefügt (Sortierung nach baseURL)
         }
         return temp;
     }

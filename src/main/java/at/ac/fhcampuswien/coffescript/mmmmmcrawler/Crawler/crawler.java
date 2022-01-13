@@ -21,10 +21,10 @@ public class crawler {
     private void parseHTML(){
         if (!links.contains(URL)){
             try {
-                Document document = Jsoup.connect(URL).get();//Fetch the HTML code
-                Elements linksOnPage = document.select("a[href]");//Parse the HTML to extract links to other URLs
-                for (Element page : linksOnPage) {//For each extracted URL... go back to Step 4.
-                    links.add(page.attr("abs:href"));
+                Document document = Jsoup.connect(URL).get();//.connect stellt die Verbindung her. .get fetcht den HTML code
+                Elements linksOnPage = document.select("a[href]");//Das HTML Document wird nach Links zu anderen URLs geparst
+                for (Element page : linksOnPage) {//alle URLs ins Hashset speichern
+                    links.add(page.attr("abs:href"));//.attr extrahiert die URL aus dem HTML Element
                 }
             } catch (IOException e) {
                 System.err.println("For '"+ URL + "': " + e.getMessage());
@@ -44,11 +44,11 @@ public class crawler {
 
     @Override
     public String toString() { //Ausgabe
-        TreeSet<String> temp= new TreeSet<String>(links);
-        StringBuilder out= new StringBuilder();
+        TreeSet<String> temp= new TreeSet<String>(links); //Um die Links sortiert auszugeben wird das Hashset in ein Treeset umgewandelt
+        StringBuilder out= new StringBuilder(); //aus den einzelnen Zeilen einen String machen
         int i=1;
-        for(String tmp : temp){
-            out.append("Link ").append(i).append(": ").append(tmp).append("\n");
+        for(String tmp : temp){ //jeder gefundene Link wird dem Stringbuilder angehängt
+            out.append("Link ").append(i).append(": ").append(tmp).append("\n"); // erzeugt den formatierten String mit allen gefundenen Links
             i++;
         }
         return out.toString();
