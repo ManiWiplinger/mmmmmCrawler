@@ -4,16 +4,15 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.TreeSet;
 
-public class mmmmmC{
+public class crawler {
     private String URL=""; //URL die gecrawlt wird
-    private HashSet<String> links = new HashSet<String>(); //Links die gefunden werden als Sring gespeichert
+    private HashSet<String> links = new HashSet<String>(); //Links die gefunden wurden, werden als String gespeichert
 
-    public mmmmmC(String URL) {
+    public crawler(String URL) { //Konstruktor ruft den eigentlichen Crawler auf
         this.URL = URL;
         parseHTML();
     }

@@ -18,7 +18,7 @@ public class LandingPageController {
     @FXML
     public void goToTryMeOut(ActionEvent event) throws IOException {
         //navigation zum nächsten Fenster
-        Parent root = FXMLLoader.load(getClass().getResource("app-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("try-me-out.fxml"));
         stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -47,8 +47,5 @@ public class LandingPageController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-    }
-
-    public static void main(String[] args) {
     }
 }

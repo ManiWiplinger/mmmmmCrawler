@@ -4,19 +4,19 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class mmmmmcManager {
-    private TreeSet<mmmmmC> content = new TreeSet<mmmmmC>();
+public class crawlerManager {
+    private TreeSet<crawler> content = new TreeSet<crawler>();
     private int depth=0;
 
-    public mmmmmcManager(HashSet<String> baseLinks, int depth) {
+    public crawlerManager(HashSet<String> baseLinks, int depth) {
         this.depth = depth;
         this.content= nextDepthLinks(baseLinks);
     }
 
-    public mmmmmcManager(mmmmmcManager baseManager, int depth) {
+    public crawlerManager(crawlerManager baseManager, int depth) {
         this.depth = depth;
         HashSet<String> baseLinks = new HashSet<String>();
-        for (mmmmmC out : baseManager.getContent()) {
+        for (crawler out : baseManager.getContent()) {
             baseLinks.addAll(out.getPageLinks());
         }
         this.content= nextDepthLinks(baseLinks);
@@ -26,16 +26,16 @@ public class mmmmmcManager {
         return depth;
     }
 
-    public TreeSet<mmmmmC> getContent() {
+    public TreeSet<crawler> getContent() {
         return content;
     }
 
-    private TreeSet<mmmmmC> nextDepthLinks(HashSet<String> links){
-        TreeSet<mmmmmC> temp = new TreeSet<mmmmmC>(new mmmmmcCompareTo());
+    private TreeSet<crawler> nextDepthLinks(HashSet<String> links){
+        TreeSet<crawler> temp = new TreeSet<crawler>(new crawlerCompareTo());
         for(String URL : links){
-            mmmmmC test= new mmmmmC(URL);
+            crawler test= new crawler(URL);
             //System.out.println(test.toString());
-            //mmmmmcCompareTo muss funktionieren https://www.geeksforgeeks.org/how-to-sort-a-treeset-with-user-defined-objects-in-java/
+            //crawlerCompareTo muss funktionieren https://www.geeksforgeeks.org/how-to-sort-a-treeset-with-user-defined-objects-in-java/
             temp.add(test);
         }
         return temp;
@@ -43,10 +43,10 @@ public class mmmmmcManager {
 
     @Override
     public String toString() {
-        Iterator<mmmmmC> iterator = content.iterator();
+        Iterator<crawler> iterator = content.iterator();
         String output="Tiefe "+depth+":\n";
         while(iterator.hasNext()){
-            mmmmmC temp = iterator.next();
+            crawler temp = iterator.next();
             output = output.concat(temp.getURL()+"\n\t"+temp.toString().replaceAll("\n","\n\t"));
             output = output.concat("\n");
         }

@@ -13,6 +13,6 @@ module at.ac.fhcampuswien.coffescript.mmmmmcrawler {
     requires json.smart;
     requires org.jsoup;
 
-    opens at.ac.fhcampuswien.coffescript.mmmmmcrawler to javafx.fxml;
     exports at.ac.fhcampuswien.coffescript.mmmmmcrawler;
+    opens at.ac.fhcampuswien.coffescript.mmmmmcrawler to javafx.fxml;
 }

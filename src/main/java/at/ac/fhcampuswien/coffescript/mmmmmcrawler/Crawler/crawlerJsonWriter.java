@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashSet;
 
-public class mmmmmCJsonWriter {
+public class crawlerJsonWriter {
 
     public static JSONObject hashSetConverter(HashSet toConvertToJSON) {
         JSONObject writeToFile = new JSONObject();
