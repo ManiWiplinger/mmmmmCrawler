@@ -69,5 +69,10 @@
             <Glow />
          </effect>
       </Button>
+      <ImageView fitHeight="36.0" fitWidth="200.0" layoutX="200.0" layoutY="45.0">
+         <image>
+            <Image url="@../../../../../graphics/crawler-image.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
