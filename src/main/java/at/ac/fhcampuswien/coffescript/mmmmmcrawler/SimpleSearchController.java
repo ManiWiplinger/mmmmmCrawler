@@ -16,8 +16,12 @@ import java.io.IOException;
 
 
 public class SimpleSearchController {
+    private crawler data = null;
+    private crawlerManager Manager1 = null;
+
     @FXML
     TextArea ta1;
+
     @FXML
     private Stage stage;
     private Scene scene;
@@ -25,11 +29,7 @@ public class SimpleSearchController {
     @FXML
     private TextField UserTextField;
 
-    private crawler data = null;
-    private crawlerManager Manager1 = null;
-
     //TODO: HeaderBar Navigation
-
     @FXML
     public void goToLandingPage(ActionEvent event) throws IOException {
         //Navigation zurück zur Landing Page
@@ -39,7 +39,6 @@ public class SimpleSearchController {
         stage.setScene(scene);
         stage.show();
     }
-
     @FXML
     public void goToHelp(ActionEvent event) throws IOException {
         //navigation zurück zur Help Page
@@ -63,7 +62,6 @@ public class SimpleSearchController {
             ta1.clear();
             ta1.setText(Manager1.toString());
             }
-
         //TODO! öffnen in neuer Seite nicht funktional, error meldung mit "ta1 is null"
         /*Parent root = FXMLLoader.load(getClass().getResource("crawler-results.fxml"));
         Stage stage = new Stage();
@@ -72,8 +70,6 @@ public class SimpleSearchController {
         stage.show();*/
 
     }
-
-
 }
 
 

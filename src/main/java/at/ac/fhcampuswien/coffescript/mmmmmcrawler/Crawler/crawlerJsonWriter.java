@@ -13,6 +13,7 @@ public class crawlerJsonWriter {
         writeToFile.put("Links: ", toConvertToJSON);
         return writeToFile;
     }
+
     public static void fileWriter(JSONObject writeToFile) {
 
         try (FileWriter file = new FileWriter("crawledLinks.json")) {

@@ -17,7 +17,6 @@ public class crawler {
         parseHTML();
     }
 
-
     private void parseHTML(){
         if (!links.contains(URL)){
             try {
@@ -31,13 +30,13 @@ public class crawler {
             }
         }
     }
+
     public HashSet<String> getPageLinks() {
         return links;
     }
     public int getCountLinks() {
         return links.size();
     }
-
     public String getURL() {
         return URL;
     }

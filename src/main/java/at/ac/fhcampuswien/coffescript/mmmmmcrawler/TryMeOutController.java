@@ -27,13 +27,11 @@ public class TryMeOutController {
 
     @FXML
     protected void onHelloButtonClick() {
-
         this.data = new crawler("http://www.oft.at/"); //BaseURL die gecrawld werden soll
         baseCrawl.setText(data.toString());
         Manager1 = null;
         Manager2 = null;
     }
-
     @FXML
     protected void tiefe1() {
         if(Manager1 == null){
@@ -53,7 +51,6 @@ public class TryMeOutController {
             ta.setText(Manager1.toString());
         }
     }
-
     @FXML
     protected void tiefe2() {
         if(Manager2 == null){
