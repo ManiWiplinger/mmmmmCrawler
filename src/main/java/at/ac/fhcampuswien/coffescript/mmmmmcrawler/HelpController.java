@@ -13,13 +13,13 @@ public class HelpController {
 
     private Stage stage;
     private Scene scene;
-    private Parent root;
 
     @FXML
     public void goToLandingPage(ActionEvent event) throws IOException {
         //Navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Landing Page");
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
