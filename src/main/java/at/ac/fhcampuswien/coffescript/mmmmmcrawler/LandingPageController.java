@@ -11,9 +11,13 @@ import java.io.IOException;
 
 public class LandingPageController {
 
+    java.net.URL url = ClassLoader.getSystemResource("src/main/resources/graphics/default-app-icon.png");
+
     private Stage stage;
     private Scene scene;
     private Parent root;
+
+    //TODO: HeaderBar Navigation
 
     @FXML
     public void goToTryMeOut(ActionEvent event) throws IOException {
@@ -22,6 +26,7 @@ public class LandingPageController {
         stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Try Me Out");
         stage.show();
     }
     @FXML
@@ -30,6 +35,7 @@ public class LandingPageController {
         stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Simple Search");
         stage.show();
     }
     @FXML
@@ -38,6 +44,7 @@ public class LandingPageController {
         stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("How To...");
         stage.show();
     }
     @FXML

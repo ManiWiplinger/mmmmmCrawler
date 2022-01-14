@@ -19,7 +19,6 @@ public class SimpleSearchController {
     @FXML
     TextArea ta1;
     @FXML
-    public Label baseCrawl1;
     private Stage stage;
     private Scene scene;
 
@@ -28,6 +27,8 @@ public class SimpleSearchController {
 
     private crawler data = null;
     private crawlerManager Manager1 = null;
+
+    //TODO: HeaderBar Navigation
 
     @FXML
     public void goToLandingPage(ActionEvent event) throws IOException {
@@ -41,7 +42,7 @@ public class SimpleSearchController {
 
     @FXML
     public void goToHelp(ActionEvent event) throws IOException {
-        //navigation zurück zur Landing Page
+        //navigation zurück zur Help Page
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -50,7 +51,6 @@ public class SimpleSearchController {
     }
     @FXML
     public void SearchFromUserTextField(){
-
         if(UserTextField.getText() == "")
         {
                 ta1.clear();
