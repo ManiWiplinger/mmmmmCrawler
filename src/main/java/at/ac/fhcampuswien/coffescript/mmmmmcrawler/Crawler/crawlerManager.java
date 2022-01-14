@@ -33,7 +33,7 @@ public class crawlerManager {
     private TreeSet<crawler> nextDepthLinks(HashSet<String> links){
         TreeSet<crawler> temp = new TreeSet<crawler>(new crawlerCompareTo());
         for(String URL : links){
-            crawler test= new crawler(URL);//neues Crawl Objekt wird erstellt
+            crawler test= new crawler(URL);//Neues Crawl Objekt wird erstellt
             temp.add(test); // Crawl Objekt wird dem Treeset hinzugefügt (Sortierung nach baseURL)
         }
         return temp;

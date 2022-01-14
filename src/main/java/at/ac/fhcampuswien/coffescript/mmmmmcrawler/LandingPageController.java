@@ -17,7 +17,7 @@ public class LandingPageController {
 
     @FXML
     public void goToTryMeOut(ActionEvent event) throws IOException {
-        //navigation zum nächsten Fenster
+        //Navigation zum nächsten Fenster
         Parent root = FXMLLoader.load(getClass().getResource("try-me-out.fxml"));
         stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
