@@ -22,9 +22,12 @@ public class TryMeOutController {
     private crawler data = null;
     private crawlerManager Manager1 = null;
     private crawlerManager Manager2 = null;
+    @FXML
+    private java.awt.Label UserTextField;
 
     @FXML
     protected void onHelloButtonClick() {
+
         this.data = new crawler("http://www.oft.at/"); //BaseURL die gecrawld werden soll
         baseCrawl.setText(data.toString());
         Manager1 = null;

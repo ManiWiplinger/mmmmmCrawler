@@ -12,6 +12,7 @@ module at.ac.fhcampuswien.coffescript.mmmmmcrawler {
     requires javafx.graphics;
     requires json.smart;
     requires org.jsoup;
+    requires java.desktop;
 
     exports at.ac.fhcampuswien.coffescript.mmmmmcrawler;
     opens at.ac.fhcampuswien.coffescript.mmmmmcrawler to javafx.fxml;
