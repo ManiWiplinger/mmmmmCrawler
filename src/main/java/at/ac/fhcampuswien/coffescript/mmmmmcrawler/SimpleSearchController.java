@@ -31,7 +31,7 @@ public class SimpleSearchController {
 
     @FXML
     public void goToLandingPage(ActionEvent event) throws IOException {
-        //navigation zum zurück zur Landing Page
+        //Navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -41,7 +41,7 @@ public class SimpleSearchController {
 
     @FXML
     public void goToHelp(ActionEvent event) throws IOException {
-        //navigation zum zurück zur Landing Page
+        //navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
