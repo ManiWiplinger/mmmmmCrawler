@@ -1,13 +1,20 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+
+import java.io.File;
 import java.io.IOException;
 import java.awt.Toolkit;
 
 public class LandingPage extends Application {
+    @FXML
+    private ImageView imageView;
 
     @Override
     public void start(Stage stage) throws IOException {

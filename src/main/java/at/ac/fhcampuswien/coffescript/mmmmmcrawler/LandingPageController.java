@@ -7,6 +7,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import javax.swing.text.html.ImageView;
 import java.io.IOException;
 
 public class LandingPageController {
@@ -18,6 +20,9 @@ public class LandingPageController {
     private Parent root;
 
     //TODO: HeaderBar Navigation
+    //TODO: Safe in Json
+    @FXML
+    private ImageView imageView;
 
     @FXML
     public void goToTryMeOut(ActionEvent event) throws IOException {
@@ -62,5 +67,6 @@ public class LandingPageController {
     //TODO Header Close
     public void HeaderExitCrawler(ActionEvent event){
         ((Node)(event.getSource())).getScene().getWindow().hide();
+        stage.close();
     }
 }
