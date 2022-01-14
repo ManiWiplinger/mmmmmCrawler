@@ -22,6 +22,7 @@ public class HelpController {
         stage.setTitle("Landing Page");
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 }

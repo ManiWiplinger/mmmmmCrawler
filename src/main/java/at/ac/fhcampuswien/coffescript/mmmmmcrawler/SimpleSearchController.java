@@ -37,6 +37,7 @@ public class SimpleSearchController {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
     @FXML
@@ -46,18 +47,19 @@ public class SimpleSearchController {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
     @FXML
     public void SearchFromUserTextField(){
+
         if(UserTextField.getText() == "")
         {
-                ta1.clear();
-                ta1.setText("Bitte einen Link eingeben!");
+            ta1.setText("Bitte einen Link eingeben!");
             }
         else
         {
-            this.data = new crawler("http://www."+ UserTextField.getText() +".at/");
+            this.data = new crawler("http://"+ UserTextField.getText());
             this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
             ta1.clear();
             ta1.setText(Manager1.toString());
@@ -70,7 +72,9 @@ public class SimpleSearchController {
         stage.show();*/
 
     }
+
 }
+
 
 
 

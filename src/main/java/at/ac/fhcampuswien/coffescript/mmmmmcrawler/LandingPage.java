@@ -5,10 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.awt.Toolkit;
 
 public class LandingPage extends Application {
-
-    java.net.URL url = ClassLoader.getSystemResource("src/main/resources/graphics/default-app-icon.png");
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -16,6 +15,9 @@ public class LandingPage extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setTitle("Landing Page");
         stage.setScene(scene);
+        stage.setResizable(false);
+        //TODO default icon
+        //Toolkit.getDefaultToolkit().getImage(LandingPage.class.getResource("default-app-icon.png"));
         stage.show();
         }
         public static void main(String[] args) {

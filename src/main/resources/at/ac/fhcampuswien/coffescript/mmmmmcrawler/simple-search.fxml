@@ -5,18 +5,14 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.effect.Glow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="553.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.SimpleSearchController">
+<AnchorPane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.SimpleSearchController">
     <children>
-        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <menus>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
@@ -38,7 +34,7 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <Button id="searchButton" layoutX="394.0" layoutY="359.0" mnemonicParsing="false" onAction="#SearchFromUserTextField" prefHeight="33.0" prefWidth="156.0" text="Search" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
+        <Button id="searchButton" layoutX="223.0" layoutY="118.0" mnemonicParsing="false" onAction="#SearchFromUserTextField" prefHeight="33.0" prefWidth="156.0" text="CRAWL" AnchorPane.bottomAnchor="399.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0">
             <opaqueInsets>
                 <Insets />
             </opaqueInsets>
@@ -46,26 +42,15 @@
                 <Glow />
             </effect></Button>
         <Button id="get-help" layoutX="14.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToHelp" prefHeight="33.0" prefWidth="69.0" text="Help" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0">
-         <effect>
-            <Glow />
-         </effect></Button>
-      <TextField fx:id="UserTextField" layoutX="55.0" layoutY="153.0" prefHeight="25.0" prefWidth="255.0" promptText="Search Input" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="153.0" />
-      <Button id="backButton" fx:id="goToLandingPageButton" layoutX="232.0" layoutY="264.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="212.0">
-         <effect>
-            <Glow />
-         </effect>
-      </Button>
-      <ImageView id="titleImage1" fitHeight="40.0" fitWidth="304.0" layoutX="175.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="27.0">
-         <image>
-            <Image url="@../../../../../../../../../../Users/curts/Downloads/WebCrawler.jpg" />
-         </image>
-      </ImageView>
-      <RadioButton id=".at-Button" layoutX="328.0" layoutY="123.0" mnemonicParsing="false" text=".at" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="123.0">
-         <toggleGroup>
-            <ToggleGroup fx:id="one" />
-         </toggleGroup></RadioButton>
-      <RadioButton id=".de-Button" layoutX="328.0" layoutY="145.0" mnemonicParsing="false" text=".de" toggleGroup="$one" AnchorPane.rightAnchor="235.0" AnchorPane.topAnchor="145.0" />
-      <RadioButton id=".com-Button" layoutX="329.0" layoutY="170.0" mnemonicParsing="false" text=".com" toggleGroup="$one" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="170.0" />
-      <TextArea fx:id="ta1" layoutX="21.0" editable="false" layoutY="211.0" prefHeight="200.0" prefWidth="568.0" />
+            <effect>
+                <Glow />
+            </effect></Button>
+        <TextField fx:id="UserTextField" layoutX="173.0" layoutY="70.0" prefHeight="25.0" prefWidth="269.0" promptText="www.example.at" AnchorPane.leftAnchor="172.5" AnchorPane.rightAnchor="172.5" />
+        <Button id="backButton" fx:id="goToLandingPageButton" layoutX="395.0" layoutY="487.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="49.0">
+            <effect>
+                <Glow />
+            </effect>
+        </Button>
+        <TextArea fx:id="ta1" editable="false" layoutX="21.0" layoutY="211.0" prefHeight="288.0" prefWidth="578.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" />
     </children>
 </AnchorPane>

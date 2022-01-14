@@ -16,7 +16,7 @@
             <Menu mnemonicParsing="false" text="File">
                <items>
                   <MenuItem mnemonicParsing="false" text="Save as JSON" />
-                  <MenuItem mnemonicParsing="false" text="Quit" />
+                  <MenuItem fx:id="HeaderExit" mnemonicParsing="false" onAction="#HeaderExitCrawler" text="Quit" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Help">
@@ -33,9 +33,9 @@
              </Menu>
          </menus>
       </MenuBar>
-        <Button id="get-help" layoutX="14.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToHelp" prefHeight="33.0" prefWidth="69.0" text="Help" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" />
+        <Button id="get-help" layoutX="266.0" layoutY="335.0" mnemonicParsing="false" onAction="#goToHelp" prefHeight="33.0" prefWidth="69.0" text="Help" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="265.5" AnchorPane.rightAnchor="265.5" />
       <Accordion layoutX="210.0" layoutY="151.0" />
-      <Button id="try-me-button" fx:id="tryMeButton" layoutX="210.0" layoutY="118.0" mnemonicParsing="false" onAction="#goToTryMeOut" prefHeight="33.0" prefWidth="156.0" text="Try me out" AnchorPane.topAnchor="118.0">
+      <Button id="try-me-button" fx:id="tryMeButton" layoutX="210.0" layoutY="118.0" mnemonicParsing="false" onAction="#goToTryMeOut" prefHeight="33.0" prefWidth="156.0" text="Try me out" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="118.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -43,7 +43,7 @@
             <Glow />
          </effect>
       </Button>
-      <Button layoutX="210.0" layoutY="167.0" mnemonicParsing="false" onAction="#goToSimpleSearch" prefHeight="33.0" prefWidth="156.0" text="Simple Search" AnchorPane.topAnchor="167.0">
+      <Button layoutX="210.0" layoutY="167.0" mnemonicParsing="false" onAction="#goToSimpleSearch" prefHeight="33.0" prefWidth="156.0" text="Simple Search" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="167.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -51,7 +51,7 @@
             <Glow />
          </effect>
       </Button>
-      <Button id="advance-search-button" layoutX="210.0" layoutY="214.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="156.0" text="Advance Search">
+      <Button id="advance-search-button" layoutX="210.0" layoutY="214.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="156.0" text="Advance Search" AnchorPane.leftAnchor="222.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -59,7 +59,7 @@
             <Glow />
          </effect>
       </Button>
-      <Button id="just-for-fun-button" layoutX="210.0" layoutY="264.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="156.0" text="Just for Fun">
+      <Button id="just-for-fun-button" layoutX="222.0" layoutY="263.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="156.0" text="Just for Fun" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>

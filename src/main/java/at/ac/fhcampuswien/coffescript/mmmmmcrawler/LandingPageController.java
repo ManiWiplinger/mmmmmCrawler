@@ -27,6 +27,7 @@ public class LandingPageController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Try Me Out");
+        stage.setResizable(false);
         stage.show();
     }
     @FXML
@@ -36,6 +37,7 @@ public class LandingPageController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Simple Search");
+        stage.setResizable(false);
         stage.show();
     }
     @FXML
@@ -45,6 +47,7 @@ public class LandingPageController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("How To...");
+        stage.setResizable(false);
         stage.show();
     }
     @FXML
@@ -53,6 +56,11 @@ public class LandingPageController {
         stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
+    }
+    //TODO Header Close
+    public void HeaderExitCrawler(ActionEvent event){
+        ((Node)(event.getSource())).getScene().getWindow().hide();
     }
 }

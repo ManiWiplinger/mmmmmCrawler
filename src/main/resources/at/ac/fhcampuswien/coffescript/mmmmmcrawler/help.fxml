@@ -10,7 +10,7 @@
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.HelpController">
+<AnchorPane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.HelpController">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
          <menus>
@@ -34,7 +34,7 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Button id="main-button" layoutX="394.0" layoutY="359.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Main" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
+      <Button id="main-button" layoutX="222.0" layoutY="486.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Main" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -43,6 +43,6 @@
          </effect>
       </Button>
       <Accordion layoutX="210.0" layoutY="151.0" />
-      <TextArea id="text-help" editable="false" layoutX="10.0" layoutY="27.0" prefHeight="295.0" prefWidth="582.0" text="Hallo ich heiße mmmmC, ich werde für dich das www crawlen. &#10;&#10;Hier ein paar Regeln die du beachten solltest:&#10;&#10;1. Crawlen auf eigene Gefahr. &#10;&#10;Du hast die Wahl:&#10;&#10;2. Simple-Search&#10;&#10;2.1 Zuertst wählst du die gewünschte URL: .at , .de oder .com&#10;2.2 Danach wählst du die gewünschte Seite die ich für dich crawlen soll&#10;2.3 Du kannst dir dann die gecrawlten Links in einer Json Datei speichern&#10;&#10;3. Advance-Search&#10;&#10;3.1 Du gibst mir den Link wo ich für dich crawlen soll&#10;3.2 Du sagst mir soll ich Links oder Texte für dich crawlen&#10;3.3 Du gibst mir die Tiefe an wie tief ich das www crawlen soll&#10;3.3 Du kannst dir dann die gecrawlten Ergebnisse in einer Json Datei speichern&#10;&#10;4. Just for Fun&#10;&#10;4.1 Las dich überraschen&#10;&#10;&#10;" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="27.0" />
+      <TextArea id="text-help" editable="false" layoutX="10.0" layoutY="53.0" prefHeight="363.0" prefWidth="580.0" text="Hallo ich heiße mmmmC, ich werde für dich das www crawlen. &#10;&#10;Hier ein paar Regeln die du beachten solltest:&#10;&#10;1. Crawlen auf eigene Gefahr. &#10;&#10;Du hast die Wahl:&#10;&#10;2. Simple-Search&#10;&#10;2.1 Zuertst wählst du die gewünschte Homepage: z.B www.orf.at&#10;2.3 Du kannst dir dann die gecrawlten Links in einer Json Datei speichern&#10;&#10;3. Advance-Search&#10;&#10;3.1 Du gibst mir den Link wo ich für dich crawlen soll&#10;3.2 Du sagst mir soll ich Links oder Texte für dich crawlen&#10;3.3 Du gibst mir die Tiefe an wie tief ich das www crawlen soll&#10;3.3 Du kannst dir dann die gecrawlten Ergebnisse in einer Json Datei speichern&#10;&#10;4. Just for Fun&#10;&#10;4.1 Las dich überraschen&#10;" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
    </children>
 </AnchorPane>
