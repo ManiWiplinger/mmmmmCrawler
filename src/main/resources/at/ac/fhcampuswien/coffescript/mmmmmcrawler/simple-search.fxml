@@ -8,6 +8,8 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.SimpleSearchController">
@@ -52,5 +54,10 @@
             </effect>
         </Button>
         <TextArea fx:id="ta1" editable="false" layoutX="21.0" layoutY="211.0" prefHeight="288.0" prefWidth="578.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" />
+        <ImageView fitHeight="50.0" fitWidth="380.0" layoutX="110.0" layoutY="25.0">
+            <image>
+                <Image url="@../../../../../graphics/crawler-image.png" />
+            </image>
+        </ImageView>
     </children>
 </AnchorPane>
