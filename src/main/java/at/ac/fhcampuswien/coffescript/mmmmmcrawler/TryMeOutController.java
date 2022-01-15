@@ -27,7 +27,7 @@ public class TryMeOutController {
 
     @FXML
     protected void onHelloButtonClick() {
-        this.data = new crawler("https://www.ksv.at/presse/insolvenzfaelle"); //BaseURL die gecrawld werden soll
+        this.data = new crawler("https://www.oft.at"); //BaseURL die gecrawld werden soll
         baseCrawl.setText(data.toString());
         Manager1 = null;
         Manager2 = null;
