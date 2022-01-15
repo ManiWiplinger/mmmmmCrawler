@@ -2,9 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
@@ -33,7 +30,7 @@
             </effect>
         </Button>
         <TextArea fx:id="ta1" editable="false" layoutX="21.0" layoutY="211.0" prefHeight="288.0" prefWidth="578.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" />
-        <ImageView fitHeight="65.0" fitWidth="240.0" layoutX="14.0" layoutY="39.0">
+        <ImageView fitHeight="65.0" fitWidth="240.0" layoutX="180.0" layoutY="26.0">
             <image>
                 <Image url="@../../../../../graphics/crawler-image.png" />
             </image>
