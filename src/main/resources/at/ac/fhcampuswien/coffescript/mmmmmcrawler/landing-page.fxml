@@ -13,28 +13,6 @@
 
 <AnchorPane prefHeight="403.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.LandingPageController">
    <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
-         <menus>
-            <Menu mnemonicParsing="false" text="File">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Save as JSON" />
-                  <MenuItem fx:id="HeaderExit" mnemonicParsing="false" onAction="#HeaderExitCrawler" text="Quit" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Help">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="How to crawl" />
-               </items>
-            </Menu>
-             <Menu mnemonicParsing="false" text="Go to">
-                 <items>
-                     <MenuItem mnemonicParsing="false" onAction="#goToSimpleSearchHeader" text="Simple Search" />
-                     <MenuItem mnemonicParsing="false" text="Advanced search" />
-                     <MenuItem fx:id="goToSimpleSearchButton" mnemonicParsing="false" onAction="#goToSimpleSearch" text="Search for fun" />
-                 </items>
-             </Menu>
-         </menus>
-      </MenuBar>
         <Button id="get-help" layoutX="266.0" layoutY="335.0" mnemonicParsing="false" onAction="#goToHelp" prefHeight="33.0" prefWidth="69.0" text="Help" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="265.5" AnchorPane.rightAnchor="265.5" />
       <Accordion layoutX="210.0" layoutY="151.0" />
       <Button id="try-me-button" fx:id="tryMeButton" layoutX="210.0" layoutY="118.0" mnemonicParsing="false" onAction="#goToTryMeOut" prefHeight="33.0" prefWidth="156.0" text="Try me out" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="118.0">
