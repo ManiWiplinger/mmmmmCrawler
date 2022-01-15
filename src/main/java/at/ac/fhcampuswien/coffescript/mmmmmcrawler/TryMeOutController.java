@@ -24,17 +24,18 @@ public class TryMeOutController {
     private crawlerManager Manager2 = null;
     @FXML
     private java.awt.Label UserTextField;
-
+    //TODO implement Multithreading to stop the Programm collapsing by crwaling biger Sites(20+ Baselinks).
     @FXML
     protected void onHelloButtonClick() {
+        ta.clear();
         this.data = new crawler("https://www.oft.at"); //BaseURL die gecrawld werden soll
-        baseCrawl.setText(data.toString());
+        ta.setText(data.toString());
         Manager1 = null;
         Manager2 = null;
     }
     @FXML
     protected void tiefe1() {
-        if(Manager1 == null){
+        if(Manager1 == null){ //Es wird nur gecrawld wenn die Tiefe 1 noch nie gecrawld wurde oder das Baseobjekt sich nicht geändert hat.
             if(data != null) {
                 this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
                 ta.clear();
