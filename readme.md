@@ -1,27 +1,48 @@
-<img align="center" width="340" height="120" src="crawler-image.png">
-
-
 # Crawler mmmmmCrawler
-Header H1 is used to display the Project heading.
+Crawler using jsoup lib for crawling links from a homepage on a working javafx GUI.
 
-## Sub Topic Headings H2
-Sub Topic Headings H2 is used for sub sections like Configurations, Authors etc.
+## Try-Me
+The try me function is an example which shows you how the program works.
 
-````
-pip install boto
-````
+In this scenario, an automatically used URL (oft.at homepage) is searched and all links are collected and returned in a text field.
 
-The above formatting is used to create a box which can display code or command in a well formatted manner.
+It is important to note out, that the user cannot enter any URLs here. When you are in the  "Try me out" window, you have 3 different crawl options, which indicate the
+depth (Tiefe 1, Tiefe 2).
+Once you press one of the "crawl" button, you search links on that specific URL website. 
+
+Always make sure, you start with the right order (1st "Crawl,
+2st "Crawl tiefe 1", 3rd "Crawl tiefe 2").
 
 
-## Usage
 
-Below is another example of displaying
-````python
-import csv
+## Simple Search
 
-with open("sample.csv","r") as csvinput: # read input csv file
-    reader = csv.reader(csvinput) # create a reader
-    for row in reader:
-        print(row[0])
-````
+Reads given URL and crawl the given page.
+syntax of ULR must contain ```www.example.domain```
+
+How to use:
+
+Enter your URL and press CRAWL.
+You will get an link  in the text field.
+
+## Comming Soon
+
+Additional implementation:
+* Crawl depth
+* Table listed div output
+* Gui improvements
+* Multithreading
+
+## Autors github links
+[Manuel](https://github.com/ManiWiplinger)
+
+[Mark](https://github.com/Fo00oX)
+
+[Markus](https://github.com/WillmannMarkus)
+
+[Curt](https://github.com/Curt96)
+
+[Michael](https://github.com/FHStudent)
+
+[Mathias](https://github.com/MathiasPal)
+
