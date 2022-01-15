@@ -32,6 +32,7 @@ Additional implementation:
 * Table listed div output
 * Gui improvements
 * Multithreading
+* 
 
 ## Autors github links
 [Manuel](https://github.com/ManiWiplinger)
