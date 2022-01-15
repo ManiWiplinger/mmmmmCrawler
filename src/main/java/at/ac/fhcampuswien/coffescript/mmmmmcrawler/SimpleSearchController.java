@@ -2,7 +2,9 @@ package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
+import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 
+//import com.google.gson.stream.JsonWriter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -63,6 +65,8 @@ public class SimpleSearchController {
             this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
             ta1.clear();
             ta1.setText(Manager1.toString());
+
+            crawlerJsonWriter.toJSONHash(data.getPageLinks()); //Ein kleiner Test für die Json-Funktion (funktioniert)
             }
         //TODO! öffnen in neuer Seite nicht funktional, error meldung mit "ta1 is null"
         /*Parent root = FXMLLoader.load(getClass().getResource("crawler-results.fxml"));

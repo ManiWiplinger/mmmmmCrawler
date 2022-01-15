@@ -20,6 +20,7 @@ public class crawlerManager {
             baseLinks.addAll(out.getPageLinks());
         }
         this.content= nextDepthLinks(baseLinks);
+        //crawlerJsonWriter.toJSONHash(baseLinks); //Kleiner JsonWriter-Test (funktioniert nicht)
     }
 
     public int getDepth() {
