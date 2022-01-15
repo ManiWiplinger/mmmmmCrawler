@@ -12,7 +12,7 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <ImageView fitHeight="50.0" fitWidth="380.0" layoutX="110.0" layoutY="25.0">
+    <ImageView fitHeight="65.0" fitWidth="240.0" layoutX="14.0" layoutY="39.0">
         <image>
             <Image url="@../../../../../graphics/crawler-image.png" />
         </image>
