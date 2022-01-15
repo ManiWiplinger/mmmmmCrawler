@@ -1,25 +1,26 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler;
 
-import net.minidev.json.JSONObject;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashSet;
+import com.google.gson.*;
+import com.google.gson.GsonBuilder;
 
 public class crawlerJsonWriter {
 
-    public static JSONObject hashSetConverter(HashSet toConvertToJSON) {
-        JSONObject writeToFile = new JSONObject();
-        writeToFile.put("Links: ", toConvertToJSON);
-        return writeToFile;
+    HashSet<String> links;
+
+    public crawlerJsonWriter(HashSet<String> links) {
+        super();
+        this.links = links;
     }
 
-    public static void fileWriter(JSONObject writeToFile) {
-
-        try (FileWriter file = new FileWriter("crawledLinks.json")) {
-            file.write(writeToFile.toJSONString());
-            file.flush();
-        } catch (IOException e) {
+    public static void toJSON(HashSet<String> links) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String jsonString = gson.toJson(links);
+        try(FileWriter toFile = new FileWriter("crawledLinks.json")) {
+            toFile.write(jsonString);
+        } catch(IOException e) {
             e.printStackTrace();
         }
     }

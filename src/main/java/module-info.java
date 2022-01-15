@@ -10,9 +10,9 @@ module at.ac.fhcampuswien.coffescript.mmmmmcrawler {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires javafx.graphics;
-    requires json.smart;
     requires org.jsoup;
     requires java.desktop;
+    requires com.google.gson;
 
     exports at.ac.fhcampuswien.coffescript.mmmmmcrawler;
     opens at.ac.fhcampuswien.coffescript.mmmmmcrawler to javafx.fxml;
