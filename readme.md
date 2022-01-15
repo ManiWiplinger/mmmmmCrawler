@@ -24,7 +24,7 @@ syntax of ULR must contain ```www.example.domain```
 How to use:
 
 Enter your URL and press CRAWL.
-You will get an link  in the text field.
+You will get an link output in the text field.
 
 ## Comming Soon
 
