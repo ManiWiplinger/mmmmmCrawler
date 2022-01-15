@@ -14,28 +14,7 @@
 
 <AnchorPane prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.SimpleSearchController">
     <children>
-        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <menus>
-                <Menu mnemonicParsing="false" text="File">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Save as JSON" />
-                        <MenuItem mnemonicParsing="false" text="Quit" />
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="How to crawl" />
-                    </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Go to">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Simple search" />
-                        <MenuItem mnemonicParsing="false" text="Advanced search" />
-                        <MenuItem mnemonicParsing="false" text="Search for fun" />
-                    </items>
-                </Menu>
-            </menus>
-        </MenuBar>
+
         <Button id="searchButton" layoutX="223.0" layoutY="118.0" mnemonicParsing="false" onAction="#SearchFromUserTextField" prefHeight="33.0" prefWidth="156.0" text="CRAWL" AnchorPane.bottomAnchor="399.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0">
             <opaqueInsets>
                 <Insets />
