@@ -1,6 +1,9 @@
 # Crawler mmmmmCrawler
 Crawler using jsoup lib for crawling links from a homepage on a working javafx GUI.
 
+## How to run
+Build and run LandinPage ``` src/main/java/at/ac/fhcampuswien/coffescript/mmmmmcrawler/LandingPage.java```
+
 ## Try-Me
 The try me function is an example which shows you how the program works.
 
@@ -12,8 +15,6 @@ Once you press one of the "crawl" button, you search links on that specific URL 
 
 Always make sure, you start with the right order (1st "Crawl,
 2st "Crawl tiefe 1", 3rd "Crawl tiefe 2").
-
-
 
 ## Simple Search
 
@@ -32,7 +33,6 @@ Additional implementation:
 * Table listed div output
 * Gui improvements
 * Multithreading
-* 
 
 ## Autors github links
 [Manuel](https://github.com/ManiWiplinger)
