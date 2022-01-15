@@ -11,7 +11,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.LandingPageController">
+<AnchorPane prefHeight="403.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.LandingPageController">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
          <menus>
@@ -69,7 +69,7 @@
             <Glow />
          </effect>
       </Button>
-      <ImageView fitHeight="50.0" fitWidth="380.0" layoutX="110.0" layoutY="25.0">
+      <ImageView fitHeight="65.0" fitWidth="240.0" layoutX="14.0" layoutY="39.0">
          <image>
             <Image url="@../../../../../graphics/crawler-image.png" />
          </image>
