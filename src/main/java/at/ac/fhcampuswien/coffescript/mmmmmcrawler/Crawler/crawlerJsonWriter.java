@@ -18,7 +18,7 @@ public class crawlerJsonWriter {
         this.links = links;
     }
 
-    public static void toJSONHash(HashSet<String> links) {
+    /*public static void toJSONHash(HashSet<String> links) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonString = gson.toJson(links);
         try(FileWriter toFile = new FileWriter("crawledLinks.json")) {
@@ -26,7 +26,7 @@ public class crawlerJsonWriter {
         } catch(IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     public static void toJsonToFileSaver(HashSet<String> links) {
         //Erstellt ein Fenster mit einer Ja-Nein-Abfrage (ob man die Links speichern will) und öffnet bei Ja das Speicherfenster
