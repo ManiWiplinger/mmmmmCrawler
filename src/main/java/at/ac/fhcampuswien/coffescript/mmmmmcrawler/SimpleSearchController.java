@@ -66,7 +66,6 @@ public class SimpleSearchController {
             ta1.clear();
             ta1.setText(Manager1.toString());
 
-            //crawlerJsonWriter.toJSONHash(data.getPageLinks()); //Ein kleiner Test für die Json-Funktion (funktioniert)
             crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks()); //Test für Json-Funktion + Speichern in ein File (funktioniert)
             }
         //TODO! öffnen in neuer Seite nicht funktional, error meldung mit "ta1 is null"
