@@ -45,10 +45,19 @@ public class JustForFunController {
      }
 
     @FXML
-    public void back(ActionEvent event) throws IOException {
+    public void goToLandingPage(ActionEvent event) throws IOException {
         //navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void goToHelp(ActionEvent event) throws IOException {
+        //navigation zurück zur Help Page
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
