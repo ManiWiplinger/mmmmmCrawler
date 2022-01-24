@@ -37,7 +37,7 @@ public class joker{
 
 
     public String toString() { //Ausgabe
-        LinkedHashSet<String> temp= new LinkedHashSet<>(links); //Um die Links sortiert auszugeben wird das Hashset in ein Treeset umgewandelt
+        LinkedHashSet<String> temp= new LinkedHashSet<>(links); //Um die Witze sortiert auszugeben sortiert LinkedHashSet die Strings nach der gefundenen Reihenfolge
         StringBuilder out= new StringBuilder(); //aus den einzelnen Zeilen einen String machen
         int i=1;
         for(String tmp : temp){ //jeder gefundene Link wird dem Stringbuilder angehängt
