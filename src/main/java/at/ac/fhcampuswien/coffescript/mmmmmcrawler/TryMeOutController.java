@@ -27,7 +27,7 @@ public class TryMeOutController {
     private java.awt.Label UserTextField;
     //TODO implement Multithreading to stop the Programm collapsing by crwaling biger Sites(20+ Baselinks).
     @FXML
-    protected void onHelloButtonClick() {
+    protected void onTryMeOutCrawl() {
         ta.clear();
         this.data = new crawler("https://www.oft.at"); //BaseURL die gecrawld werden soll
         ta.setText(data.toString());
