@@ -23,8 +23,8 @@ public class LandingPage extends Application {
         stage.setTitle("Landing Page");
         stage.setScene(scene);
         stage.setResizable(false);
-        Image anonotherIcon = new Image("file:graphics/default-app-icon.png");
-        stage.getIcons().add(anonotherIcon);
+        Image anotherIcon = new Image("file:graphics/default-app-icon.png");
+        stage.getIcons().add(anotherIcon);
         //TODO default icon
         //Toolkit.getDefaultToolkit().getImage(LandingPage.class.getResource("default-app-icon.png"));
         stage.show();

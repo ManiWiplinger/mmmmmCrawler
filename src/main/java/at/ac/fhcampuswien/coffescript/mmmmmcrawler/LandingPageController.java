@@ -64,6 +64,17 @@ public class LandingPageController {
         stage.setResizable(false);
         stage.show();
     }
+    @FXML
+    public void goToJustForFun(ActionEvent event) throws IOException {
+        //Navigation zum nächsten Fenster
+        Parent root = FXMLLoader.load(getClass().getResource("just-for-fun.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Just for fun");
+        stage.setResizable(false);
+        stage.show();
+    }
     //TODO Header Close
     public void HeaderExitCrawler(ActionEvent event){
         ((Node)(event.getSource())).getScene().getWindow().hide();
