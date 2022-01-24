@@ -38,7 +38,7 @@ public class JustForFunController {
 
 
     @FXML
-    protected void onHelloButtonClick() {
+    protected void onSearchForFun() {
         ta.clear();
         this.data = new joker(source[randomNumber()]); //BaseURL die gecrawld werden soll
         ta.setText(data.toString());
