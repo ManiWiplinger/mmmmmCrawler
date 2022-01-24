@@ -15,7 +15,7 @@
         </image>
     </ImageView>
     <Label fx:id="baseCrawl" />
-    <Button onAction="#onHelloButtonClick" text="Just fo fun!" />
-    <Button onAction="#back" text="Back" />
+    <Button onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="75.0" text="Just fo fun!" />
+    <Button onAction="#back" prefHeight="26.0" prefWidth="75.0" text="Back" />
     <TextArea fx:id="ta" editable="false" minHeight="300" />
 </VBox>
