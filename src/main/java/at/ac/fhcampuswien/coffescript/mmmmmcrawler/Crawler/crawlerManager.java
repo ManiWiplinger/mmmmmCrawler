@@ -13,7 +13,7 @@ public class crawlerManager {
         this.content= nextDepthLinks(baseLinks);
     }
 
-    public crawlerManager(crawlerManager baseManager, int depth) { // Konstruktor für Tiefen > 0
+    public crawlerManager(crawlerManager baseManager, int depth)  { // Konstruktor für Tiefen > 0
         this.depth = depth;
         HashSet<String> baseLinks = new HashSet<String>();
         for (crawler out : baseManager.getContent()) {

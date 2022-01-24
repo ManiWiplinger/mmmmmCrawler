@@ -2,6 +2,7 @@ package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -53,7 +54,7 @@ public class TryMeOutController {
         }
     }
     @FXML
-    protected void tiefe2() {
+    protected void tiefe2()  {
         if(Manager2 == null){
             if(Manager1 != null) {
                 this.Manager2 = new crawlerManager(Manager1, 2);
