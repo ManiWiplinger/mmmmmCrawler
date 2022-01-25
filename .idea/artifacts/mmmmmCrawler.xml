@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="mmmmmCrawler">
+    <output-path>$PROJECT_DIR$/out/artifacts/mmmmmCrawler</output-path>
+    <root id="root">
+      <element id="archive" name="mmmmmCrawler.jar">
+        <element id="module-output" name="mmmmmCrawler" />
+      </element>
+    </root>
+  </artifact>
+</component>
