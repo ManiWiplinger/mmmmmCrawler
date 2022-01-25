@@ -56,17 +56,24 @@ public class LandingPageController {
         stage.show();
     }
     @FXML
-    public void goToSimpleSearchHeader(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("simple-search.fxml"));
-        stage =(Stage) ((Node)event.getSource()).getScene().getWindow();
+    public void goToAdvancedSearch(ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("advanced-search.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Advanced Search");
         stage.setResizable(false);
         stage.show();
     }
-    //TODO Header Close
-    public void HeaderExitCrawler(ActionEvent event){
-        ((Node)(event.getSource())).getScene().getWindow().hide();
-        stage.close();
+    @FXML
+    public void goToJustForFun(ActionEvent event) throws IOException {
+        //Navigation zum nächsten Fenster
+        Parent root = FXMLLoader.load(getClass().getResource("just-for-fun.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Just for fun");
+        stage.setResizable(false);
+        stage.show();
     }
 }

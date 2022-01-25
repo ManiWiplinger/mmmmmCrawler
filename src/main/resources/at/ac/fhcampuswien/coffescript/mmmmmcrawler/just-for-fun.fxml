@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.JustForFunController">
+    <children>
+         <Button id="get-help" layoutX="14.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToHelp" prefHeight="33.0" prefWidth="69.0" text="Help" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" />
+         <Button id="backButton" fx:id="goToLandingPageButton" layoutX="223.0" layoutY="523.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="222.0" />
+          <ImageView fitHeight="65.0" fitWidth="240.0" layoutX="180.0" layoutY="26.0">
+              <image>
+                  <Image url="@../../../../../graphics/crawler-image.png" />
+              </image>
+          </ImageView>
+          <Label fx:id="baseCrawl" />
+          <TextArea fx:id="ta" editable="false" layoutY="180.0" minHeight="215.0" prefHeight="284.0" prefWidth="578.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" />
+          <Button fx:id="jokes" layoutX="222.0" layoutY="147.0" mnemonicParsing="false" onAction="#onSearchForFun" pickOnBounds="false" prefHeight="33.0" prefWidth="156.0" text="Just For Fun" AnchorPane.bottomAnchor="406.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" />
+      <CheckBox id="soundEffectChoice" fx:id="soundEffectChoice" layoutX="239.0" layoutY="187.0" mnemonicParsing="false" onAction="#soundEffectsOn" text="Funny Sound Effect" />
+      </children>
+   </AnchorPane>

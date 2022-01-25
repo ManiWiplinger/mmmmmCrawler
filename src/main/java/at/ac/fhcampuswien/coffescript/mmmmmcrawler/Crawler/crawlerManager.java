@@ -13,14 +13,13 @@ public class crawlerManager {
         this.content= nextDepthLinks(baseLinks);
     }
 
-    public crawlerManager(crawlerManager baseManager, int depth) { // Konstruktor für Tiefen > 0
+    public crawlerManager(crawlerManager baseManager, int depth)  { // Konstruktor für Tiefen > 0
         this.depth = depth;
         HashSet<String> baseLinks = new HashSet<String>();
         for (crawler out : baseManager.getContent()) {
             baseLinks.addAll(out.getPageLinks());
         }
         this.content= nextDepthLinks(baseLinks);
-        //crawlerJsonWriter.toJSONHash(baseLinks); //Kleiner JsonWriter-Test (funktioniert nicht)
     }
 
     public int getDepth() {
@@ -31,7 +30,7 @@ public class crawlerManager {
         return content;
     }
 
-    private TreeSet<crawler> nextDepthLinks(HashSet<String> links){ // erzeugt mit den Links des übergebenen Hashset ein Teeset aus crawler Objekten
+    protected TreeSet<crawler> nextDepthLinks(HashSet<String> links){ // erzeugt mit den Links des übergebenen Hashset ein Teeset aus crawler Objekten
         TreeSet<crawler> temp = new TreeSet<crawler>(new crawlerCompareTo());
         for(String URL : links){
             crawler test= new crawler(URL);//Neues Crawl Objekt wird erstellt
