@@ -30,7 +30,6 @@ public class TryMeOutController {
     private crawlerManager Manager2 = null;
     @FXML
     private java.awt.Label UserTextField;
-    //TODO implement Multithreading to stop the Programm collapsing by crwaling biger Sites(20+ Baselinks).
     @FXML
     protected void onTryMeOutCrawl() {
         ta.clear();

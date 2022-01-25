@@ -31,7 +31,6 @@ public class SimpleSearchController {
     @FXML
     private TextField UserTextField;
 
-    //TODO: HeaderBar Navigation
     @FXML
     public void goToLandingPage(ActionEvent event) throws IOException {
         //Navigation zurück zur Landing Page

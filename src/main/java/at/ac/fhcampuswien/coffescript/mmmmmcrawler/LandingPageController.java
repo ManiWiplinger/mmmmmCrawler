@@ -19,8 +19,6 @@ public class LandingPageController {
     private Scene scene;
     private Parent root;
 
-    //TODO: HeaderBar Navigation
-    //TODO: Safe in Json
     @FXML
     private ImageView imageView;
 
