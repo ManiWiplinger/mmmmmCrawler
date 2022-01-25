@@ -55,26 +55,27 @@ public class SimpleSearchController {
     @FXML
     public void SearchFromUserTextField() throws IOException {
 
-        if(UserTextField.getText() == "")
-        {
+        if (UserTextField.getText() == "") {
             ta1.setText("Bitte einen Link eingeben!");
-            }
-        else
-        {
-            this.data = new crawler("http://"+ UserTextField.getText());
+        } else {
+
+            this.data = new crawler("http://" + UserTextField.getText());
             this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
             ta1.clear();
             ta1.setText(Manager1.toString());
 
-
-            //crawlerJsonWriter test = new crawlerJsonWriter(/*data.getPageLinks()*/);
-            //test.start();
-            crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks()); //Implementierung der Json-Funktion + Speichern in ein File (funktioniert)
-
+        }
     }
 
+    @FXML
+    public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
 
+        crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
+    }
 
+        //crawlerJsonWriter test = new crawlerJsonWriter(/*data.getPageLinks()*/);
+        //test.start();
+        //Implementierung der Json-Funktion + Speichern in ein File (funktioniert)
 
         //TODO! öffnen in neuer Seite nicht funktional, error meldung mit "ta1 is null"
         /*Parent root = FXMLLoader.load(getClass().getResource("crawler-results.fxml"));
@@ -82,9 +83,6 @@ public class SimpleSearchController {
         stage.setScene(new Scene(root, 350, 350));
         stage.setScene(scene);
         stage.show();*/
-
-    }
-
 }
 
 

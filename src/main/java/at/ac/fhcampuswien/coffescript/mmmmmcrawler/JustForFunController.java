@@ -1,6 +1,8 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.joker;
+import javafx.animation.FadeTransition;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -44,11 +46,11 @@ public class JustForFunController {
     }
 
     @FXML
-    protected void soundEffectsOn(ActionEvent sound) {
+    protected void soundEffectsOn() {
         soundMachine = soundEffectChoice.isSelected();
     }
     @FXML
-    protected void onSearchForFun(ActionEvent event) throws IOException{
+    protected void onSearchForFun() {
         if (soundEffectChoice.isSelected()) { //Soundeffect Checkbox
             mediaPlayer.play();
             mediaPlayer.seek(Duration.ONE);
@@ -56,6 +58,15 @@ public class JustForFunController {
         if (!soundEffectChoice.isSelected()){
             mediaPlayer.stop();
         }
+       /* FadeTransition ft =
+                new FadeTransition(Duration.millis(1000), jokes);
+        ft.setFromValue(1.0);
+        ft.setToValue(0);
+        ft.setCycleCount(Timeline.INDEFINITE);
+        ft.setAutoReverse(true);
+        ft.play(); */
+
+
         ta.clear();
         this.data = new joker(source[randomNumber()]); //BaseURL die gecrawld werden soll
         ta.setText(data.toString());

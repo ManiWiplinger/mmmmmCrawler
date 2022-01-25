@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Glow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.SimpleSearchController">
+<AnchorPane prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.SimpleSearchController">
     <children>
 
         <Button id="searchButton" layoutX="223.0" layoutY="118.0" mnemonicParsing="false" onAction="#SearchFromUserTextField" prefHeight="33.0" prefWidth="156.0" text="CRAWL" AnchorPane.bottomAnchor="399.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0">
@@ -24,7 +21,7 @@
                 <Glow />
             </effect></Button>
         <TextField fx:id="UserTextField" layoutX="173.0" layoutY="110.0" prefHeight="25.0" prefWidth="269.0" promptText="www.example.at" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="172.0" />
-        <Button id="backButton" fx:id="goToLandingPageButton" layoutX="395.0" layoutY="487.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="49.0">
+        <Button id="backButton" fx:id="goToLandingPageButton" layoutX="223.0" layoutY="523.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="221.0">
             <effect>
                 <Glow />
             </effect>
@@ -35,5 +32,6 @@
                 <Image url="@../../../../../graphics/crawler-image.png" />
             </image>
         </ImageView>
+      <Button fx:id="SaveAsJSON" layoutX="426.0" layoutY="523.0" mnemonicParsing="false" onAction="#SaveAsJSON" prefHeight="33.0" prefWidth="156.0" text="Save as JSON" />
     </children>
 </AnchorPane>

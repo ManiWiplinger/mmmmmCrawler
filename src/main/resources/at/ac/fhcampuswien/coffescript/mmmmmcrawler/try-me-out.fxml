@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.TryMeOutController">
+<AnchorPane prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.fhcampuswien.coffescript.mmmmmcrawler.TryMeOutController">
 <children>
     <ImageView fitHeight="65.0" fitWidth="240.0" layoutX="180.0" layoutY="26.0">
         <image>
             <Image url="@../../../../../graphics/crawler-image.png" />
         </image>
     </ImageView>
-    <Button layoutX="24.0" layoutY="127.0" onAction="#onTryMeOutCrawl" prefHeight="33.0" prefWidth="156.0" text="Crawl" AnchorPane.leftAnchor="11.0" />
-    <Button layoutX="229.0" layoutY="127.0" onAction="#tiefe1" prefHeight="33.0" prefWidth="156.0" text="Crawl tiefe 1" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" />
-    <Button layoutX="420.0" layoutY="127.0" onAction="#tiefe2" prefHeight="33.0" prefWidth="156.0" text="Crawl tiefe 2" AnchorPane.rightAnchor="11.0" />
+    <Button fx:id="Crawl" layoutX="24.0" layoutY="127.0" onAction="#onTryMeOutCrawl" prefHeight="33.0" prefWidth="156.0" text="Crawl" AnchorPane.leftAnchor="11.0" />
+    <Button fx:id="tiefe1" layoutX="229.0" layoutY="127.0" onAction="#tiefe1" prefHeight="33.0" prefWidth="156.0" text="Crawl tiefe 1" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" />
+    <Button fx:id="tiefe2" layoutX="420.0" layoutY="127.0" onAction="#tiefe2" prefHeight="33.0" prefWidth="156.0" text="Crawl tiefe 2" AnchorPane.rightAnchor="11.0" />
     <Button layoutX="229.0" layoutY="525.0" onAction="#back" prefHeight="33.0" prefWidth="156.0" text="Back" />
     <TextArea fx:id="ta" editable="false" layoutX="21.0" layoutY="211.0" prefHeight="288.0" prefWidth="578.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" />
 

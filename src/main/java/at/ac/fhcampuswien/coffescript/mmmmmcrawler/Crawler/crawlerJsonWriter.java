@@ -9,7 +9,7 @@ import com.google.gson.GsonBuilder;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-public class crawlerJsonWriter extends Thread {
+public class crawlerJsonWriter {
 
     public static void toJsonToFileSaver(HashSet<String> links) {
     //Erstellt ein Fenster mit einer Ja-Nein-Abfrage (ob man die Links speichern will) und öffnet bei Ja das Speicherfenster
