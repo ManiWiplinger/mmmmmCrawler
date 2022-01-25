@@ -1,9 +1,6 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
-import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.joker;
-import javafx.animation.FadeTransition;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

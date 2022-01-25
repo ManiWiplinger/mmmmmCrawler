@@ -13,7 +13,7 @@ public class LandingPage extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("landing-page.fxml"));
         stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 586, 600);
         stage.setTitle("Landing Page");
         stage.setScene(scene);
         stage.setResizable(false);
@@ -22,8 +22,6 @@ public class LandingPage extends Application {
     public static void main(String[] args) {
 
         launch();
-
     }
-
-    }
+}
 

@@ -4,7 +4,6 @@ import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -59,6 +58,7 @@ public class SimpleSearchController {
     @FXML
     public void SearchFromUserTextField() throws IOException {
 
+
         if (UserTextField.getText() == "") {
             ta1.setText("Bitte einen Link eingeben!");
         } else {
@@ -76,15 +76,4 @@ public class SimpleSearchController {
             crawlerJsonWriter.simpleSearchJSON(data.getPageLinks(), Manager1.getContent());
         }
     }
-
-        //crawlerJsonWriter test = new crawlerJsonWriter(/*data.getPageLinks()*/);
-        //test.start();
-        //Implementierung der Json-Funktion + Speichern in ein File (funktioniert)
-
-        //TODO! öffnen in neuer Seite nicht funktional, error meldung mit "ta1 is null"
-        /*Parent root = FXMLLoader.load(getClass().getResource("crawler-results.fxml"));
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root, 350, 350));
-        stage.setScene(scene);
-        stage.show();*/
 }

@@ -9,17 +9,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
-
 
 public class AdvancedSearchController  {
 
@@ -39,7 +36,6 @@ public class AdvancedSearchController  {
     @FXML
     private TextField DepthInput;
     private int depth;
-
 
     @FXML
     public void goToLandingPage(ActionEvent event) throws IOException {
@@ -68,8 +64,6 @@ public class AdvancedSearchController  {
     @FXML
     public void SearchFromUserTextField() {
 
-       // depth = Integer.parseInt(DepthInput.getText());
-
         if (Objects.equals(UserTextField1.getText(), "")) {
             ta2.clear();
             ta2.setText("Bitte einen Link eingeben!");
@@ -94,8 +88,6 @@ public class AdvancedSearchController  {
                 crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
             }*/
         }
-
-
 }
 
     

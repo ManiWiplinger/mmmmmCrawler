@@ -6,9 +6,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
-import java.util.TreeSet;
 
 public class joker{
     private String URL=""; //URL die gecrawlt wird
@@ -18,7 +16,6 @@ public class joker{
         this.URL = URL;
         parseHTML();
     }
-
 
     private void parseHTML(){
         if (!links.contains(URL)){
@@ -45,4 +42,3 @@ public class joker{
         return out.toString();
     }
 }
-
