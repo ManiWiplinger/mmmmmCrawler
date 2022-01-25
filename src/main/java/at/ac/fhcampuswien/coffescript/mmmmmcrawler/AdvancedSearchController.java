@@ -1,8 +1,8 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
-import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ public class AdvancedSearchController  {
 
     public Button goToLandingPageButton;
     private crawler data = null;
-    private crawlerManager[] Manager= new crawlerManager[3];
+    private crawlerManager[] Manager = new crawlerManager[3];
 
     @FXML
     TextArea ta2;
@@ -82,17 +82,5 @@ public class AdvancedSearchController  {
                 ta2.appendText(this.Manager[i].toString());
             }
         }
-
-        }
-   @FXML
-    public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
-       /* if (data != null) {
-            crawlerJsonWriter.simpleSearchJSON(data.getPageLinks(), Manager.getContent());
-        }*/
     }
 }
-
-
-    
-
-

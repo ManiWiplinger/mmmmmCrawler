@@ -6,11 +6,11 @@ import java.util.TreeSet;
 
 public class crawlerManager {
     private TreeSet<crawler> content = new TreeSet<crawler>();
-    private int depth=0;
+    private int depth = 0;
 
     public crawlerManager(HashSet<String> baseLinks, int depth) { //Konstruktor für Tiefe null
         this.depth = depth;
-        this.content= nextDepthLinks(baseLinks);
+        this.content = nextDepthLinks(baseLinks);
     }
 
     public crawlerManager(crawlerManager baseManager, int depth)  { // Konstruktor für Tiefen > 0

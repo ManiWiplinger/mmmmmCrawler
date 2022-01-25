@@ -44,7 +44,7 @@ public class SimpleSearchController {
     }
     @FXML
     public void goToHelp(ActionEvent event) throws IOException {
-        //navigation zurück zur Help Page
+        //Navigation zurück zur Help Page
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
@@ -57,7 +57,6 @@ public class SimpleSearchController {
     @FXML
     public void SearchFromUserTextField() throws IOException {
 
-
         if (UserTextField.getText() == "") {
             ta1.setText("Bitte einen Link eingeben!");
         } else {
@@ -68,7 +67,6 @@ public class SimpleSearchController {
             ta1.setText(Manager1.toString());
         }
     }
-
     @FXML
     public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
         if (data != null) {
