@@ -34,13 +34,13 @@ If you like to you can save the result in a JSON file using the button in the lo
 Hit the Just For Fun button for some fun ;)
 Checking the box allows you to hear the developers best friend at work ;)
 
-## Executable .jar File
-
-The executable .jar file is found here ```out/artifacts/mmmmmCrawler_jar/mmmmmCrawler.jar``` 
-
 ## Help
 
 Gives you a short Overview of the functions.
+
+## Executable .jar File
+
+The executable .jar file is found here ```out/artifacts/mmmmmCrawler_jar/mmmmmCrawler.jar``` 
 
 ## Comming Soon
 
