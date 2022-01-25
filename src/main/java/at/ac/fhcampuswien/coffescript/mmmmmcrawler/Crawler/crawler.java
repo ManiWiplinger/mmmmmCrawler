@@ -22,7 +22,7 @@ public class crawler {
         parseHTML();
     }
 
-    private void parseHTML(){
+    protected void parseHTML(){
         if (!links.contains(URL)){
             try {
                 Document document = Jsoup.connect(URL).get();//.connect stellt die Verbindung her. .get fetcht den HTML code

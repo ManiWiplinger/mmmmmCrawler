@@ -27,7 +27,7 @@ import java.util.Random;
 public class JustForFunController {
     public CheckBox soundEffectChoice;
     public Button jokes;
-    String path = "soundeffect//KaffeemaschinenSound1.mp3";
+    String path = "soundeffect//KaffeemaschinenSoundHardBase.mp3";
     Media media = new Media(new File(path).toURI().toString());
     MediaPlayer mediaPlayer = new MediaPlayer(media);
     boolean soundMachine;
