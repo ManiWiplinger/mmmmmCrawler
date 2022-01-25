@@ -67,16 +67,14 @@ public class SimpleSearchController {
             this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
             ta1.clear();
             ta1.setText(Manager1.toString());
-
         }
     }
 
     @FXML
     public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
         if (data != null) {
-            crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
+            crawlerJsonWriter.simpleSearchJSON(data.getPageLinks(), Manager1.getContent());
         }
-
     }
 
         //crawlerJsonWriter test = new crawlerJsonWriter(/*data.getPageLinks()*/);
@@ -90,5 +88,3 @@ public class SimpleSearchController {
         stage.setScene(scene);
         stage.show();*/
 }
-
-

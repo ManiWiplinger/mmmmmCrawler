@@ -80,7 +80,7 @@ public class TryMeOutController {
     @FXML
     public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
         if (data != null) {
-            crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
+            crawlerJsonWriter.tryMeOutJSON(data.getPageLinks(), Manager1.getContent(), Manager2.getContent());
         }
     }
     @FXML
