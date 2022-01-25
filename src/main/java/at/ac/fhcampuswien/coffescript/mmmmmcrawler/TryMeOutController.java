@@ -78,7 +78,7 @@ public class TryMeOutController {
         }
     }
     @FXML
-    public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
+    public void SaveAsJSON() {
         if (data != null) {
             crawlerJsonWriter.tryMeOutJSON(data.getPageLinks(), Manager1.getContent(), Manager2.getContent());
         }

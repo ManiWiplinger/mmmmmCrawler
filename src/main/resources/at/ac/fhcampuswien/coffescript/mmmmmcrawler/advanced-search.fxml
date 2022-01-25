@@ -21,5 +21,6 @@
             </image>
         </ImageView>
         <TextField fx:id="DepthInput" layoutX="393.0" layoutY="109.0" prefHeight="25.0" prefWidth="49.0" promptText="Depth" AnchorPane.rightAnchor="120.0" />
+        <Button fx:id="SaveAsJSON" layoutX="426.0" layoutY="523.0" mnemonicParsing="false" onAction="#SaveAsJSON" prefHeight="33.0" prefWidth="156.0" text="Save as JSON" />
     </children>
 </AnchorPane>

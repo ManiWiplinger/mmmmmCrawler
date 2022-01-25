@@ -82,13 +82,16 @@ public class AdvancedSearchController  {
                 ta2.appendText(this.Manager[i].toString());
             }
         }
-        /*@FXML
-        public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
-            if (data != null) {
-                crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
-            }*/
+
         }
+   @FXML
+    public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
+       /* if (data != null) {
+            crawlerJsonWriter.simpleSearchJSON(data.getPageLinks(), Manager.getContent());
+        }*/
+    }
 }
+
 
     
 
