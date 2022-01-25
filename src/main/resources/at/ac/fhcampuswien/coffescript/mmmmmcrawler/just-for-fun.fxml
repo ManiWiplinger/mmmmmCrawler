@@ -15,7 +15,7 @@
           </ImageView>
           <Label fx:id="baseCrawl" />
           <TextArea fx:id="ta" editable="false" layoutY="180.0" minHeight="215.0" prefHeight="284.0" prefWidth="578.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" />
-          <Button fx:id="jokes" layoutX="222.0" layoutY="153.0" mnemonicParsing="false" onAction="#onSearchForFun" pickOnBounds="false" prefHeight="33.0" prefWidth="156.0" text="Just For Fun" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" />
-      <CheckBox id="soundEffectChoice" fx:id="soundEffectChoice" layoutX="386.0" layoutY="169.0" mnemonicParsing="false" onAction="#soundEffectsOn" text="Funny sound Effect" />
+          <Button fx:id="jokes" layoutX="222.0" layoutY="147.0" mnemonicParsing="false" onAction="#onSearchForFun" pickOnBounds="false" prefHeight="33.0" prefWidth="156.0" text="Just For Fun" AnchorPane.bottomAnchor="406.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" />
+      <CheckBox id="soundEffectChoice" fx:id="soundEffectChoice" layoutX="239.0" layoutY="187.0" mnemonicParsing="false" onAction="#soundEffectsOn" text="Funny sound Effect" />
       </children>
    </AnchorPane>
