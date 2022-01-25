@@ -37,7 +37,7 @@ public class JustForFunController {
     private String[] source = {"https://schlechtewitze.com/?sort=score", "https://schlechtewitze.com/flachwitze","https://schlechtewitze.com/perverse-flachwitze","https://schlechtewitze.com/informatiker",
             "https://schlechtewitze.com/chuck-norris", "https://schlechtewitze.com/deine-mutter", "https://schlechtewitze.com/", "https://schlechtewitze.com/zweideutige-witze", "https://schlechtewitze.com/kurze-witze",
             "https://schlechtewitze.com/kurze-witze?skip=40", "https://schlechtewitze.com/informatiker?skip=20", "https://schlechtewitze.com/informatiker?skip=40", "https://schlechtewitze.com/informatiker?skip=60",
-    "https://schlechtewitze.com/informatiker?skip=80", "https://schlechtewitze.com/informatiker?skip=100","https://schlechtewitze.com/informatiker?skip=120","https://schlechtewitze.com/informatiker?skip=140", "https://schlechtewitze.com/informatiker?skip=160",
+            "https://schlechtewitze.com/informatiker?skip=80", "https://schlechtewitze.com/informatiker?skip=100","https://schlechtewitze.com/informatiker?skip=120","https://schlechtewitze.com/informatiker?skip=140", "https://schlechtewitze.com/informatiker?skip=160",
             "https://schlechtewitze.com/informatiker?skip=180", "https://schlechtewitze.com/?sort=score&skip=60", "https://schlechtewitze.com/?sort=score&skip=80", "https://schlechtewitze.com/?sort=score&skip=100", "https://schlechtewitze.com/scherzfragen"};
 
     private int randomNumber() {

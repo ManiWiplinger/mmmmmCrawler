@@ -88,8 +88,9 @@ public class TryMeOutController {
     }
     @FXML
     public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
-
-        crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
+        if (data != null) {
+            crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
+        }
     }
     @FXML
     public void back(ActionEvent event) throws IOException {

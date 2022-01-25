@@ -69,8 +69,10 @@ public class SimpleSearchController {
 
     @FXML
     public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
+        if (data != null) {
+            crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
+        }
 
-        crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
     }
 
         //crawlerJsonWriter test = new crawlerJsonWriter(/*data.getPageLinks()*/);
