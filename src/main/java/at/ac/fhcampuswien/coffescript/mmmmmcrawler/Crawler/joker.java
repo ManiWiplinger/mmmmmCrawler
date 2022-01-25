@@ -34,8 +34,6 @@ public class joker{
         }
     }
 
-
-
     public String toString() { //Ausgabe
         LinkedHashSet<String> temp= new LinkedHashSet<>(links); //Um die Witze sortiert auszugeben sortiert LinkedHashSet die Strings nach der gefundenen Reihenfolge
         StringBuilder out= new StringBuilder(); //aus den einzelnen Zeilen einen String machen

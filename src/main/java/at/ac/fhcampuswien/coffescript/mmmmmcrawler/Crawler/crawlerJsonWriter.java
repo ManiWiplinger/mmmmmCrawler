@@ -49,7 +49,6 @@ public class crawlerJsonWriter {
             }
         }
     }
-
     /*public static void toJSONTree(TreeSet set) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonString = gson.toJson(set);

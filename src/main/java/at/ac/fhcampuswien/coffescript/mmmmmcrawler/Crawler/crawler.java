@@ -10,6 +10,9 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.TreeSet;
 
+/**
+ * in der Klasse Crawler wird die gegebene URL in parseHTML geparsed und in ein string mit toString verpackt.
+**/
 public class crawler {
     private String URL=""; //URL die gecrawlt wird
     private HashSet<String> links = new HashSet<String>(); //Links die gefunden wurden, werden als String gespeichert
