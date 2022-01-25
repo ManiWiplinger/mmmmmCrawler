@@ -16,6 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -24,8 +25,7 @@ public class AdvancedSearchController  {
 
     public Button goToLandingPageButton;
     private crawler data = null;
-    private crawlerManager Manager1 = null;
-    private TreeSet<crawler> content = new TreeSet<crawler>();
+    private crawlerManager[] Manager= new crawlerManager[3];
 
     @FXML
     TextArea ta2;
@@ -86,11 +86,14 @@ public class AdvancedSearchController  {
         else if (this.depth < 0 || this.depth > 3) {
                 ta2.setText("Bitte Tiefe zwischen 0 - 2 eingeben");
             } else  {
-
-                this.data = new crawler("http://" + UserTextField.getText());
-                this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
                 ta2.clear();
-                ta2.setText(Manager1.toString());
+                this.Manager[0] = new crawlerManager(new HashSet<String>(Collections.singleton("http://" + UserTextField.getText())), 0);
+                for (int i = 1; i <= depth; i++) {
+                    this.Manager[i] = new crawlerManager(this.Manager[i-1], i);
+                }
+            for (int i = 0; i <= depth; i++) {
+                ta2.appendText(this.Manager[i].toString());
+            }
             }
         /*@FXML
         public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
