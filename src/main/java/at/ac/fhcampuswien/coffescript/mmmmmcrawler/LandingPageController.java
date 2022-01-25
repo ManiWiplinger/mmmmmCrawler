@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class LandingPageController {
 
-    java.net.URL url = ClassLoader.getSystemResource("src/main/resources/graphics/default-app-icon.png");
+    java.net.URL url = ClassLoader.getSystemResource("src/main/resources/graphics/default-app-icon.png.png");
 
     private Stage stage;
     private Scene scene;
