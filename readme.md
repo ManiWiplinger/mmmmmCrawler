@@ -43,12 +43,6 @@ Gives you a short Overview of the functions.
 
 The executable .jar file is found here ```out/artifacts/mmmmmCrawler_jar/mmmmmCrawler.jar``` 
 
-## Comming Soon
-
-Additional implementation:
-* Multithreading
-* Crawl depth
-
 ## Autors github links
 [Manuel](https://github.com/ManiWiplinger)
 

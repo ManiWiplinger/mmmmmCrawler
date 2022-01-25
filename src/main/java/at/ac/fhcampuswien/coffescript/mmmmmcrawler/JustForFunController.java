@@ -38,7 +38,7 @@ public class JustForFunController {
             "https://schlechtewitze.com/informatiker?skip=80", "https://schlechtewitze.com/informatiker?skip=100","https://schlechtewitze.com/informatiker?skip=120","https://schlechtewitze.com/informatiker?skip=140", "https://schlechtewitze.com/informatiker?skip=160",
             "https://schlechtewitze.com/informatiker?skip=180", "https://schlechtewitze.com/?sort=score&skip=60", "https://schlechtewitze.com/?sort=score&skip=80", "https://schlechtewitze.com/?sort=score&skip=100", "https://schlechtewitze.com/scherzfragen"};
 
-    private int randomNumber() {
+    private int randomNumber() { // generiert die Aurray Nummer von den Witzen die ausgegeben werden sollen
         Random random = new Random();
         int randomJokeNumber = random.nextInt(this.source.length);
         return randomJokeNumber;
@@ -50,15 +50,15 @@ public class JustForFunController {
     }
     @FXML
     protected void onSearchForFun() {
-        if (soundEffectChoice.isSelected()) { //Soundeffect Checkbox
+        if (soundEffectChoice.isSelected()) { //Soundeffect Checkbox wird aktiviert
             mediaPlayer.play();
             mediaPlayer.seek(Duration.ONE);
         }
-        if (!soundEffectChoice.isSelected()){
+        if (!soundEffectChoice.isSelected()){ //deaktivert den Sound wenn, das Häckchen wieder weggegeben wird
             mediaPlayer.stop();
         }
         ta.clear();
-        this.data = new joker(source[randomNumber()]); //BaseURL die gecrawld werden soll
+        this.data = new joker(source[randomNumber()]); //Witze die Ausgegeben werden sollen
         ta.setText(data.toString());
      }
 
