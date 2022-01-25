@@ -32,6 +32,7 @@ If you like to you can save the result in a JSON file using the button in the lo
 ## Just for fun
 
 Hit the Just For Fun button for some fun ;)
+
 Checking the box allows you to hear the developers best friend at work ;)
 
 ## Help
