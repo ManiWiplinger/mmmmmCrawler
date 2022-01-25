@@ -1,17 +1,18 @@
 # Crawler mmmmmCrawler
-Crawler using jsoup lib for crawling links from a homepage on a working javafx GUI.
+This Crawler is using jsoup lib for crawling links from a homepage on a working javafx GUI.
 
 ## How to run
-Build and run LandinPage ``` src/main/java/at/ac/fhcampuswien/coffescript/mmmmmcrawler/LandingPage.java```
+Build and run LandingPage ``` src/main/java/at/ac/fhcampuswien/coffescript/mmmmmcrawler/LandingPage.java```
 
-## Try-Me
-The try me function is an example which shows you how the program works.
+## TryMeOut
+The TryMeOut function is an example which shows you how the program works.
 
 In this scenario, an automatically used URL (oft.at homepage) is searched and all links are collected and returned in a text field.
 
 It is important to note out, that the user cannot enter any URLs here. When you are in the  "Try me out" window, you have 3 different crawl options, which indicate the
-depth (Tiefe 1, Tiefe 2).
-Once you press one of the "crawl" button, you search links on that specific URL website. 
+depth (Tiefe 0, Tiefe 1, Tiefe 2).
+Once you press the "crawl" button, you search links on that specific URL website. 
+If you like to you can save the result in a JSON file using the button in the lower right corner.
 
 Always make sure, you start with the right order (1st "Crawl,
 2st "Crawl tiefe 1", 3rd "Crawl tiefe 2").
@@ -19,20 +20,33 @@ Always make sure, you start with the right order (1st "Crawl,
 ## Simple Search
 
 Reads given URL and crawl the given page.
-syntax of ULR must contain ```www.example.domain```
+Syntax of ULR must contain ```www.example.domain```
 
 How to use:
 
 Enter your URL and press CRAWL.
-You will get an link output in the text field.
+You will get a link output in the text field.
+If you like to you can save the result in a JSON file using the button in the lower right corner.
+
+
+## Just for fun
+
+Hit the Just For Fun button for some fun ;)
+Checking the box allows you to hear the developers best friend at work ;)
+
+## Executable .jar File
+
+The executable .jar file is found here ```out/artifacts/mmmmmCrawler_jar/mmmmmCrawler.jar``` 
+
+## Help
+
+Gives you a short Overview of the functions.
 
 ## Comming Soon
 
 Additional implementation:
-* Crawl depth
-* Table listed div output
-* Gui improvements
 * Multithreading
+* Crawl depth
 
 ## Autors github links
 [Manuel](https://github.com/ManiWiplinger)
@@ -41,11 +55,14 @@ Additional implementation:
 
 [Markus](https://github.com/WillmannMarkus)
 
-[Curt](https://github.com/Curt96)
+[Mathias](https://github.com/MathiasPal)
 
 [Michael](https://github.com/FHStudent)
 
-[Mathias](https://github.com/MathiasPal)
+[Curt](https://github.com/Curt96)
+
+
+
 
 
 
