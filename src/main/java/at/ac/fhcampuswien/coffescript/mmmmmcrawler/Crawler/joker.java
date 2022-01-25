@@ -8,6 +8,10 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.LinkedHashSet;
 
+/** here is defined that the crawler parse paragrapphs and not links
+ *
+ */
+
 public class joker{
     private String URL=""; //URL die gecrawlt wird
     private LinkedHashSet<String> links = new LinkedHashSet<>(); //Links die gefunden wurden, werden als String gespeichert

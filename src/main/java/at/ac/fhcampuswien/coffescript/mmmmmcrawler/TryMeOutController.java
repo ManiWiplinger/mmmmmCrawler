@@ -17,6 +17,10 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
 
+/** for try out the crawler with his functions
+ *
+ */
+
 public class TryMeOutController {
 
 

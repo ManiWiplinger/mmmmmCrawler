@@ -16,6 +16,9 @@ import javafx.stage.Stage;
 import javafx.scene.control.*;
 import java.io.IOException;
 
+/**This Class take Users input from TextField (whot should be a Link to a homepage
+ *
+ */
 
 public class SimpleSearchController {
     private crawler data = null;

@@ -10,6 +10,10 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
 
+/**This Class explane how the Application works
+ *
+ */
+
 public class HelpController {
 
     private Stage stage;

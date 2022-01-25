@@ -1,7 +1,6 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
-import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,6 +17,9 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
 
+/**this Class take Users input from TextField (whot should be a Link to a homepage and also alow the User to put a depth variable from 0-2
+ *
+ */
 public class AdvancedSearchController  {
 
     public Button goToLandingPageButton;

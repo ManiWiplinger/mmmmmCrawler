@@ -11,6 +11,10 @@ import javafx.stage.Stage;
 import javax.swing.text.html.ImageView;
 import java.io.IOException;
 
+/** Navigation with buttons for the starting page
+ *
+ */
+
 public class LandingPageController {
 
     java.net.URL url = ClassLoader.getSystemResource("src/main/resources/graphics/default-app-icon.png.png");

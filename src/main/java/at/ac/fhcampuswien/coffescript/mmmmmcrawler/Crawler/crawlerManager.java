@@ -4,6 +4,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.TreeSet;
 
+/** for define the depht which is nessasary for the Controler Classes
+ *
+ */
+
 public class crawlerManager {
     private TreeSet<crawler> content = new TreeSet<crawler>();
     private int depth=0;

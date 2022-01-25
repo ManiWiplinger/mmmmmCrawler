@@ -8,6 +8,11 @@ import com.google.gson.GsonBuilder;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+
+/** to write the Jsaon file
+ *
+ */
+
 public class crawlerJsonWriter {
 
     public static void tryMeOutJSON(HashSet<String> links, TreeSet<crawler> Manager1, TreeSet<crawler> Manager2) {
