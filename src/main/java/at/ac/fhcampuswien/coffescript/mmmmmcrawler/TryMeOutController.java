@@ -61,11 +61,7 @@ public class TryMeOutController {
         else{
             ta.clear();
             ta.setText(Manager1.toString());
-
-
         }
-
-
     }
     @FXML
     protected void tiefe2()  {

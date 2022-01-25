@@ -29,8 +29,9 @@ public class LandingPage extends Application {
         //Toolkit.getDefaultToolkit().getImage(LandingPage.class.getResource("default-app-icon.png"));
         stage.show();
         }
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         launch();
-        }
+    }
+
     }
 

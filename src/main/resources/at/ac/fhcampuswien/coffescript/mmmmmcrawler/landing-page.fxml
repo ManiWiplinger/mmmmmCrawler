@@ -28,7 +28,7 @@
             <Glow />
          </effect>
       </Button>
-      <Button id="advance-search-button" layoutX="210.0" layoutY="214.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="156.0" text="Advance Search" AnchorPane.leftAnchor="222.0">
+      <Button id="advance-search-button" layoutX="210.0" layoutY="214.0" mnemonicParsing="false" onAction="#goToAdvancedSearch" prefHeight="33.0" prefWidth="156.0" text="Advanced Search" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
