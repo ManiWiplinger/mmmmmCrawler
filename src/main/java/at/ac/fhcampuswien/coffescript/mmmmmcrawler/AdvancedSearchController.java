@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Objects;
 
 
 public class AdvancedSearchController  {
@@ -34,7 +35,7 @@ public class AdvancedSearchController  {
     private Scene scene;
 
     @FXML
-    private TextField UserTextField;
+    private TextField UserTextField1;
     @FXML
     private TextField DepthInput;
     private int depth;
@@ -67,18 +68,19 @@ public class AdvancedSearchController  {
     @FXML
     public void SearchFromUserTextField() {
 
-        depth = Integer.parseInt(DepthInput.getText());
+       // depth = Integer.parseInt(DepthInput.getText());
 
-        if (UserTextField.getText() == "") {
+        if (Objects.equals(UserTextField1.getText(), "")) {
             ta2.clear();
             ta2.setText("Bitte einen Link eingeben!");
         }
-        else if (depth < 0 || depth > 3) {
+        else if (!DepthInput.getText().matches("[0-2]")) {
             ta2.clear();
             ta2.setText("Bitte Tiefe zwischen 0 - 2 eingeben");
         } else  {
+            depth = Integer.parseInt(DepthInput.getText());
             ta2.clear();
-            this.Manager[0] = new crawlerManager(new HashSet<String>(Collections.singleton("http://" + UserTextField.getText())), 0);
+            this.Manager[0] = new crawlerManager(new HashSet<String>(Collections.singleton("http://" + UserTextField1.getText())), 0);
             for (int i = 1; i <= depth; i++) {
                 this.Manager[i] = new crawlerManager(this.Manager[i-1], i);
             }

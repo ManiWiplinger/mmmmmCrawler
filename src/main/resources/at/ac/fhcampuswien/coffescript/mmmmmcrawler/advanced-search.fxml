@@ -22,7 +22,7 @@
             <effect>
                 <Glow />
             </effect></Button>
-        <TextField fx:id="UserTextField" layoutX="119.0" layoutY="109.0" prefHeight="25.0" prefWidth="295.0" promptText="www.example.at" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="185.0" />
+        <TextField fx:id="UserTextField1" layoutX="119.0" layoutY="109.0" prefHeight="25.0" prefWidth="295.0" promptText="www.example.at" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="185.0" />
         <Button id="backButton" fx:id="goToLandingPageButton" layoutX="223.0" layoutY="523.0" mnemonicParsing="false" onAction="#goToLandingPage" prefHeight="33.0" prefWidth="156.0" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="221.0">
             <effect>
                 <Glow />
