@@ -12,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
 import java.io.IOException;
@@ -37,6 +38,7 @@ public class SimpleSearchController {
         //Navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
@@ -47,6 +49,7 @@ public class SimpleSearchController {
         //navigation zurück zur Help Page
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);

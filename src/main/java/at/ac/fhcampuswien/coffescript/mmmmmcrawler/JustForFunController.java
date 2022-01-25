@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import javafx.scene.media.Media;
@@ -69,6 +70,7 @@ public class JustForFunController {
         //navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -78,6 +80,7 @@ public class JustForFunController {
         //navigation zurück zur Help Page
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
+        stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

@@ -4,8 +4,6 @@ import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
 
-import javafx.animation.FadeTransition;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,10 +13,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import javafx.util.Duration;
-
-import javax.swing.*;
 import java.io.IOException;
 
 public class TryMeOutController {
@@ -50,7 +46,6 @@ public class TryMeOutController {
                 this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
                 ta.clear();
                 ta.setText(Manager1.toString());
-
             }
             else
             {
@@ -93,6 +88,7 @@ public class TryMeOutController {
         //navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
