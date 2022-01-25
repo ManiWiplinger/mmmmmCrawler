@@ -20,7 +20,7 @@ Always make sure you start with the right order (1st "Crawl,
 ## Simple Search
 
 Reads given URL and crawl the given page.
-Syntax of ULR must contain ```www.example.domain```
+Syntax of ULR must contain ```example.domain```
 
 How to use:
 
@@ -28,6 +28,17 @@ Enter your URL and press CRAWL.
 You will get a link output in the text field.
 If you like to you can save the result in a JSON file using the button in the lower right corner.
 
+## Advanced Search
+
+Reads an URL given by the User and crawls the page.
+Syntax of ULR must contain ```example.domain```
+
+How to use:
+
+Enter the URL you want to be crawled.
+Also it is necessary to define a depth (either 0,1 or 2).
+Afterwards press CRAWL.
+You will get a link output in the text field.
 
 ## Just for fun
 
