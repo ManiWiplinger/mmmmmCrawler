@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.TreeSet;
 
 
 public class AdvancedSearchController  {
@@ -46,6 +45,7 @@ public class AdvancedSearchController  {
         //Navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Landing Page");
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
@@ -57,6 +57,7 @@ public class AdvancedSearchController  {
         //navigation zurück zur Help Page
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("How To...");
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);

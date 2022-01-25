@@ -88,7 +88,6 @@ public class TryMeOutController {
         //navigation zurück zur Landing Page
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
         stage.setTitle("Landing Page");
         Scene scene = new Scene(root);
         stage.setScene(scene);
