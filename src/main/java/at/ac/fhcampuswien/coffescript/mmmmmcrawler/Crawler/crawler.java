@@ -1,5 +1,7 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
