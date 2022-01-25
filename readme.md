@@ -14,7 +14,7 @@ depth (Tiefe 0, Tiefe 1, Tiefe 2).
 Once you press the "crawl" button, you search links on that specific URL website. 
 If you like to you can save the result in a JSON file using the button in the lower right corner.
 
-Always make sure, you start with the right order (1st "Crawl,
+Always make sure you start with the right order (1st "Crawl,
 2st "Crawl tiefe 1", 3rd "Crawl tiefe 2").
 
 ## Simple Search
