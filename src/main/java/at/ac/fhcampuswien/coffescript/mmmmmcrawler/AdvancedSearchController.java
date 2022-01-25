@@ -63,18 +63,6 @@ public class AdvancedSearchController  {
         stage.show();
     }
 
-
-    /*public AdvancedSearchController(crawlerManager baseManager, int depth, TextField depthInput) {
-        super(baseManager, depth);
-        this.depth = depth;
-        HashSet<String> baseLinks = new HashSet<String>();
-        for (crawler out : baseManager.getContent()) {
-            baseLinks.addAll(out.getPageLinks());
-        }
-        this.content= nextDepthLinks(baseLinks);
-    }*/
-
-
     @FXML
     public void SearchFromUserTextField() {
 
@@ -84,17 +72,17 @@ public class AdvancedSearchController  {
             ta2.setText("Bitte einen Link eingeben!");
         }
         else if (Integer.parseInt(DepthInput.getText()) < 0 || Integer.parseInt(DepthInput.getText()) > 3) {
-                ta2.setText("Bitte Tiefe zwischen 0 - 2 eingeben");
-            } else  {
-                ta2.clear();
-                this.Manager[0] = new crawlerManager(new HashSet<String>(Collections.singleton("http://" + UserTextField.getText())), 0);
-                for (int i = 1; i <= depth; i++) {
-                    this.Manager[i] = new crawlerManager(this.Manager[i-1], i);
-                }
+            ta2.setText("Bitte Tiefe zwischen 0 - 2 eingeben");
+        } else  {
+            ta2.clear();
+            this.Manager[0] = new crawlerManager(new HashSet<String>(Collections.singleton("http://" + UserTextField.getText())), 0);
+            for (int i = 1; i <= depth; i++) {
+                this.Manager[i] = new crawlerManager(this.Manager[i-1], i);
+            }
             for (int i = 0; i <= depth; i++) {
                 ta2.appendText(this.Manager[i].toString());
             }
-            }
+        }
         /*@FXML
         public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
             if (data != null) {

@@ -71,6 +71,7 @@ public class JustForFunController {
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
+        stage.setTitle("Landing Page");
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -81,6 +82,7 @@ public class JustForFunController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
+        stage.setTitle("How To...");
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

@@ -39,6 +39,7 @@ public class SimpleSearchController {
         Parent root = FXMLLoader.load(getClass().getResource("landing-page.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
+        stage.setTitle("Landing Page");
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
@@ -50,6 +51,7 @@ public class SimpleSearchController {
         Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
+        stage.setTitle("How To...");
         scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
