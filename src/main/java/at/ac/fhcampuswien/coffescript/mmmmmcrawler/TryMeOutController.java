@@ -1,6 +1,7 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
+import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
 
 import javafx.animation.FadeTransition;
@@ -84,6 +85,11 @@ public class TryMeOutController {
             ta.clear();
             ta.setText(Manager2.toString());
         }
+    }
+    @FXML
+    public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
+
+        crawlerJsonWriter.toJsonToFileSaver(data.getPageLinks());
     }
     @FXML
     public void back(ActionEvent event) throws IOException {

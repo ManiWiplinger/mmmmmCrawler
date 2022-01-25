@@ -1,5 +1,6 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
+import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.joker;
 import javafx.animation.FadeTransition;
 import javafx.animation.Timeline;
@@ -58,15 +59,6 @@ public class JustForFunController {
         if (!soundEffectChoice.isSelected()){
             mediaPlayer.stop();
         }
-       /* FadeTransition ft =
-                new FadeTransition(Duration.millis(1000), jokes);
-        ft.setFromValue(1.0);
-        ft.setToValue(0);
-        ft.setCycleCount(Timeline.INDEFINITE);
-        ft.setAutoReverse(true);
-        ft.play(); */
-
-
         ta.clear();
         this.data = new joker(source[randomNumber()]); //BaseURL die gecrawld werden soll
         ta.setText(data.toString());
