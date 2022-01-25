@@ -67,12 +67,14 @@ public class AdvancedSearchController  {
     @FXML
     public void SearchFromUserTextField() {
 
-        //this.depth = Integer.parseInt(DepthInput.getText());
+        depth = Integer.parseInt(DepthInput.getText());
 
         if (UserTextField.getText() == "") {
+            ta2.clear();
             ta2.setText("Bitte einen Link eingeben!");
         }
-        else if (Integer.parseInt(DepthInput.getText()) < 0 || Integer.parseInt(DepthInput.getText()) > 3) {
+        else if (depth < 0 || depth > 3) {
+            ta2.clear();
             ta2.setText("Bitte Tiefe zwischen 0 - 2 eingeben");
         } else  {
             ta2.clear();
