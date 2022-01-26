@@ -9,8 +9,8 @@ import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 
-/** to write the Jsaon file
- *
+/**
+ * to write the JSON file
  */
 
 public class crawlerJsonWriter {
