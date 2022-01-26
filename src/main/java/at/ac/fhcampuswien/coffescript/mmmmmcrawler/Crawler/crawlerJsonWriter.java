@@ -8,9 +8,8 @@ import com.google.gson.GsonBuilder;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-
-/** to write the Jsaon file
- *
+/**
+ * to write the JSON file
  */
 
 public class crawlerJsonWriter {
@@ -19,7 +18,6 @@ public class crawlerJsonWriter {
     //Erstellt ein Fenster mit einer Ja-Nein-Abfrage (ob man die Links speichern will) und öffnet bei Ja das Speicherfenster
     //Speichert die Links in ein JSON-File ab
 
-        Object[] options = {"Ja", "Nein"}; //Optionen, die auf den Buttons erscheinen sollen
         String dir = System.getProperty("user.home"); //Wird für das Default-Directory im JFileChooser verwendet
 
         //Limitiert JFileChooser auf JSON-Dateien
@@ -66,7 +64,6 @@ public class crawlerJsonWriter {
         //Erstellt ein Fenster mit einer Ja-Nein-Abfrage (ob man die Links speichern will) und öffnet bei Ja das Speicherfenster
         //Speichert die Links in ein JSON-File ab
 
-        Object[] options = {"Ja", "Nein"}; //Optionen, die auf den Buttons erscheinen sollen
         String dir = System.getProperty("user.home"); //Wird für das Default-Directory im JFileChooser verwendet
 
         //Limitiert JFileChooser auf JSON-Dateien
