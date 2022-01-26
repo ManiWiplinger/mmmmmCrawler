@@ -8,7 +8,7 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.LinkedHashSet;
 
-/** here is defined that the crawler parse paragrapphs and not links
+/** here is defined that the crawler parse section and not links
  *
  */
 

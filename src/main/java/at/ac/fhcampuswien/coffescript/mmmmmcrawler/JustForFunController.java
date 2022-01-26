@@ -21,7 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
-/** in a given array with multible links a random generator will take one, and crawl a paragraph
+ /** in a given array with multible links a random generator will take one, and crawl a paragraph
  *
  */
 
@@ -32,35 +32,34 @@ public class JustForFunController {
     Media media = new Media(new File(path).toURI().toString());
     MediaPlayer mediaPlayer = new MediaPlayer(media);
     boolean soundMachine;
-
-    @FXML
-    private TextArea ta;
     private joker data = null;
     private String[] source = {"https://schlechtewitze.com/?sort=score", "https://schlechtewitze.com/flachwitze","https://schlechtewitze.com/perverse-flachwitze","https://schlechtewitze.com/informatiker",
-            "https://schlechtewitze.com/chuck-norris", "https://schlechtewitze.com/deine-mutter", "https://schlechtewitze.com/", "https://schlechtewitze.com/zweideutige-witze", "https://schlechtewitze.com/kurze-witze",
-            "https://schlechtewitze.com/kurze-witze?skip=40", "https://schlechtewitze.com/informatiker?skip=20", "https://schlechtewitze.com/informatiker?skip=40", "https://schlechtewitze.com/informatiker?skip=60",
-            "https://schlechtewitze.com/informatiker?skip=80", "https://schlechtewitze.com/informatiker?skip=100","https://schlechtewitze.com/informatiker?skip=120","https://schlechtewitze.com/informatiker?skip=140", "https://schlechtewitze.com/informatiker?skip=160",
-            "https://schlechtewitze.com/informatiker?skip=180", "https://schlechtewitze.com/?sort=score&skip=60", "https://schlechtewitze.com/?sort=score&skip=80", "https://schlechtewitze.com/?sort=score&skip=100", "https://schlechtewitze.com/scherzfragen"};
+             "https://schlechtewitze.com/chuck-norris", "https://schlechtewitze.com/deine-mutter", "https://schlechtewitze.com/", "https://schlechtewitze.com/zweideutige-witze", "https://schlechtewitze.com/kurze-witze",
+             "https://schlechtewitze.com/kurze-witze?skip=40", "https://schlechtewitze.com/informatiker?skip=20", "https://schlechtewitze.com/informatiker?skip=40", "https://schlechtewitze.com/informatiker?skip=60",
+             "https://schlechtewitze.com/informatiker?skip=80", "https://schlechtewitze.com/informatiker?skip=100","https://schlechtewitze.com/informatiker?skip=120","https://schlechtewitze.com/informatiker?skip=140", "https://schlechtewitze.com/informatiker?skip=160",
+             "https://schlechtewitze.com/informatiker?skip=180", "https://schlechtewitze.com/?sort=score&skip=60", "https://schlechtewitze.com/?sort=score&skip=80", "https://schlechtewitze.com/?sort=score&skip=100", "https://schlechtewitze.com/scherzfragen"};
 
-    private int randomNumber() { // generiert die Aurray Nummer von den Witzen die ausgegeben werden sollen
-        Random random = new Random();
-        int randomJokeNumber = random.nextInt(this.source.length);
-        return randomJokeNumber;
-    }
+     private int randomNumber() { // generiert die Array Nummer von den Witzen die ausgegeben werden sollen
+         Random random = new Random();
+         int randomJokeNumber = random.nextInt(this.source.length);
+         return randomJokeNumber;
+     }
+    @FXML
+    private TextArea ta;
 
     @FXML
     protected void soundEffectsOn() {
         soundMachine = soundEffectChoice.isSelected();
     }
+
     @FXML
     protected void onSearchForFun() {
         if (soundEffectChoice.isSelected()) { //Soundeffect Checkbox wird aktiviert
             mediaPlayer.play();
             mediaPlayer.seek(Duration.ONE);
-        }
-        if (!soundEffectChoice.isSelected()){ //deaktivert den Sound wenn, das Häckchen wieder weggegeben wird
+        } else                                //deaktivert den Sound wenn, das Häckchen wieder weggegeben wird
             mediaPlayer.stop();
-        }
+
         ta.clear();
         this.data = new joker(source[randomNumber()]); //Witze die Ausgegeben werden sollen
         ta.setText(data.toString());
