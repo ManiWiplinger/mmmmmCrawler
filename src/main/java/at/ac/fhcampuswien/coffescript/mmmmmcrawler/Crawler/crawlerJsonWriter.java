@@ -8,7 +8,6 @@ import com.google.gson.GsonBuilder;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-
 /**
  * to write the JSON file
  */
