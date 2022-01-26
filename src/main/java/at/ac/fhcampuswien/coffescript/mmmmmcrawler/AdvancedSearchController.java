@@ -1,6 +1,7 @@
 package at.ac.fhcampuswien.coffescript.mmmmmcrawler;
 
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawler;
+import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerJsonWriter;
 import at.ac.fhcampuswien.coffescript.mmmmmcrawler.Crawler.crawlerManager;
 
 import javafx.event.ActionEvent;
@@ -24,7 +25,6 @@ import java.util.Objects;
 public class AdvancedSearchController  {
 
     public Button goToLandingPageButton;
-    private crawler data = null;
     private crawlerManager[] Manager = new crawlerManager[3];
 
     @FXML

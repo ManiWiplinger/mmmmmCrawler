@@ -4,8 +4,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-/** for define the depht which is nessasary for the Controler Classes
- *
+/**
+ *  Verwaltet alle Links einer Tiefe. Die übergebenen Links werden gecrawled.
+ *  Die dadurch erzeugten crawler Objekte werden in einem Treeset gespeichert.
+ *  Um das Treeset auf crawl Objekte anzuwenden wurde die crawlerCompareTo Klasse implementiert.
  */
 
 public class crawlerManager {
@@ -25,6 +27,8 @@ public class crawlerManager {
         }
         this.content= nextDepthLinks(baseLinks);
     }
+
+
 
     public int getDepth() {
         return depth;

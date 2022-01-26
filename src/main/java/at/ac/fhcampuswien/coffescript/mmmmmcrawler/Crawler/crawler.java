@@ -23,16 +23,14 @@ public class crawler {
     }
 
     protected void parseHTML(){
-        if (!links.contains(URL)){
-            try {
-                Document document = Jsoup.connect(URL).get();//.connect stellt die Verbindung her. .get fetcht den HTML code
-                Elements linksOnPage = document.select("a[href]");//Das HTML Document wird nach Links zu anderen URLs geparst
-                for (Element page : linksOnPage) {//alle URLs ins Hashset speichern
-                    links.add(page.attr("abs:href"));//.attr extrahiert die URL aus dem HTML Element
-                }
-            } catch (IOException e) {
-                System.err.println("For '"+ URL + "': " + e.getMessage());
+        try {
+            Document document = Jsoup.connect(URL).get();//.connect stellt die Verbindung her. .get fetcht den HTML code
+            Elements linksOnPage = document.select("a[href]");//Das HTML Document wird nach Links zu anderen URLs geparst
+            for (Element page : linksOnPage) {//alle URLs ins Hashset speichern
+                links.add(page.attr("abs:href"));//.attr extrahiert die URL aus dem HTML Element
             }
+        } catch (IOException e) {
+            System.err.println("For '"+ URL + "': " + e.getMessage());
         }
     }
 
