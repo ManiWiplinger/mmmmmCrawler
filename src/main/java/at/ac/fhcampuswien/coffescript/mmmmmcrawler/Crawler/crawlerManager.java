@@ -21,14 +21,12 @@ public class crawlerManager {
 
     public crawlerManager(crawlerManager baseManager, int depth)  { // Konstruktor für Tiefen > 0
         this.depth = depth;
-        HashSet<String> baseLinks = new HashSet<String>();
+        HashSet<String> baseLinks = new HashSet<String>(); //Mit diesem HashSet wird die nächste Tiefe gecrawlt
         for (crawler out : baseManager.getContent()) {
             baseLinks.addAll(out.getPageLinks());
         }
         this.content= nextDepthLinks(baseLinks);
     }
-
-
 
     public int getDepth() {
         return depth;

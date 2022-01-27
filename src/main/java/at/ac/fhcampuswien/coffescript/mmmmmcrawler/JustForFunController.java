@@ -21,8 +21,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
- /** in a given array with multible links a random generator will take one, and crawl a paragraph
- *
+ /**
+ * in a given array with multible links a random generator will take one, and crawl a paragraph
  */
 
 public class JustForFunController {
