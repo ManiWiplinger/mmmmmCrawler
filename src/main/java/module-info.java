@@ -14,6 +14,7 @@ module at.ac.fhcampuswien.coffescript.mmmmmcrawler {
     requires java.desktop;
     requires com.google.gson;
     requires javafx.media;
+    requires javafx.base;
 
     exports at.ac.fhcampuswien.coffescript.mmmmmcrawler;
     opens at.ac.fhcampuswien.coffescript.mmmmmcrawler to javafx.fxml;

@@ -60,6 +60,7 @@ public class crawlerJsonWriter {
             }
         }
     }
+
     public static void simpleSearchJSON(HashSet<String> links, TreeSet<crawler> Manager1) {
         //Erstellt ein Fenster mit einer Ja-Nein-Abfrage (ob man die Links speichern will) und öffnet bei Ja das Speicherfenster
         //Speichert die Links in ein JSON-File ab

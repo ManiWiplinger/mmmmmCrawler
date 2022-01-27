@@ -6,8 +6,8 @@ import java.util.TreeSet;
 
 /**
  *  Verwaltet alle Links einer Tiefe. Die übergebenen Links werden gecrawled.
- *  Die dadurch erzeugten crawler Objekte werden in einem Treeset gespeichert.
- *  Um das Treeset auf crawl Objekte anzuwenden wurde die crawlerCompareTo Klasse implementiert.
+ *  Die dadurch erzeugten crawler Objekte werden in einem TreeSet gespeichert.
+ *  Um das TreeSet auf crawl Objekte anzuwenden wurde die crawlerCompareTo Klasse implementiert.
  */
 
 public class crawlerManager {

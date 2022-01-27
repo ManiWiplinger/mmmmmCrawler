@@ -50,10 +50,6 @@ Checking the box allows you to hear the developers best friend at work ;)
 
 Gives you a short Overview of the functions.
 
-## Executable .jar File
-
-The executable .jar file is found here ```out/artifacts/mmmmmCrawler_jar/mmmmmCrawler.jar``` 
-
 ## Autors github links
 [Manuel](https://github.com/ManiWiplinger)
 
