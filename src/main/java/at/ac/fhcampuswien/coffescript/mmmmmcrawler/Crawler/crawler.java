@@ -31,6 +31,7 @@ public class crawler {
             }
         } catch (IOException e) {
             System.err.println("For '"+ URL + "': " + e.getMessage());
+            links.add("Error For URL :'"+ URL + "': " + e.getMessage());
         }
     }
 
