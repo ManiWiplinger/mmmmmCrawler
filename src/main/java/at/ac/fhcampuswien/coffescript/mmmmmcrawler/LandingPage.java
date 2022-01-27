@@ -7,8 +7,8 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-/** Starting page
- *
+/**
+ * Starting page
  */
 
 public class LandingPage extends Application {

@@ -11,8 +11,8 @@ import javafx.stage.Stage;
 import javax.swing.text.html.ImageView;
 import java.io.IOException;
 
-/** Navigation with buttons for the starting page
- *
+/**
+ * Navigation with buttons for the starting page
  */
 
 public class LandingPageController {

@@ -19,8 +19,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
 
-/**this Class take Users input from TextField (whot should be a Link to a homepage and also alow the User to put a depth variable from 0-2
- *
+/**
+ * this Class take Users input from TextField (whot should be a Link to a homepage and also alow the User to put a depth variable from 0-2
  */
 public class AdvancedSearchController  {
 
