@@ -29,7 +29,7 @@ public class crawlerJsonWriter {
 
         //Wandelt Links in geordnete JSON-Strings um
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String jsonString = gson.toJson(links);;
+        String jsonString = gson.toJson(links);
         ArrayList<String> list = new ArrayList<>(); //Liste für das Speichern von Sublinks
 
         //Werden benötigt, um über die TreeSets zu iterieren
