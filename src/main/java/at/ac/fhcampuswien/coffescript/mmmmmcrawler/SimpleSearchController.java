@@ -65,14 +65,15 @@ public class SimpleSearchController {
         } else {
 
             this.data = new crawler("http://" + UserTextField.getText());
-            this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
+            this.Manager1 = new crawlerManager(data.getPageLinks(), 0);
             ta1.clear();
-            ta1.setText(data.toString());
+            ta1.setText(Manager1.toString());
         }
     }
     @FXML
     public void SaveAsJSON(ActionEvent SaveAsJSON) throws IOException{
         if (data != null) {
+
             crawlerJsonWriter.simpleSearchJSON(data.getPageLinks(), Manager1.getContent());
         }
     }
