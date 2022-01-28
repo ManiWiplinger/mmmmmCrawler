@@ -65,7 +65,7 @@ public class SimpleSearchController {
         } else {
 
             this.data = new crawler("http://" + UserTextField.getText());
-            //this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
+            this.Manager1 = new crawlerManager(data.getPageLinks(), 1);
             ta1.clear();
             ta1.setText(data.toString());
         }
