@@ -96,4 +96,16 @@ public class TryMeOutController {
         stage.setScene(scene);
         stage.show();
     }
+
+    @FXML
+    public void goToHelp(ActionEvent event) throws IOException {
+        //navigation zurück zur Help Page
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("help.fxml"));
+        stage.getIcons().add(new Image("file:src/main/resources/graphics/default-app-icon.png"));
+        stage.setTitle("How To...");
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

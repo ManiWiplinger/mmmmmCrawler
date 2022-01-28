@@ -11,6 +11,7 @@
             <Image url="@../../../../../graphics/crawler-image.png" />
         </image>
     </ImageView>
+    <Button id="get-help" layoutX="14.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToHelp" prefHeight="33.0" prefWidth="69.0" text="Help" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" />
     <Button fx:id="Crawl" layoutX="24.0" layoutY="127.0" onAction="#onTryMeOutCrawl" prefHeight="33.0" prefWidth="156.0" text="Crawl" AnchorPane.leftAnchor="11.0" />
     <Button fx:id="tiefe1" layoutX="229.0" layoutY="127.0" onAction="#tiefe1" prefHeight="33.0" prefWidth="156.0" text="Crawl tiefe 1" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="222.0" />
     <Button fx:id="tiefe2" layoutX="420.0" layoutY="127.0" onAction="#tiefe2" prefHeight="33.0" prefWidth="156.0" text="Crawl tiefe 2" AnchorPane.rightAnchor="11.0" />
